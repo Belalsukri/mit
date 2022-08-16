@@ -6,10 +6,12 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server",
-    "server": "nodemon server",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "heroku-prostbuild": "NODE_ENV=production cd client && npm install && npm run build"
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-prostbuild": "cd app && cd client && npm install && npm run build",
+    "full-install": "npm install && npm install --prefix client"
    
   },
   "keywords": [],
