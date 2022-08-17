@@ -3,9 +3,9 @@ const path = require('path');
 
 const port = process.env.PORT || 5000
 const app =express()
-app.use(express.static(path.join(__dirname ,"..",'buch-mitmacher4','client','build')));
+app.use(express.static(path.join(__dirname ,"..",'buch-homayoom','client','build')));
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname ,"..",'buch-mitmacher4','client','build', 'index.html'));
+  res.sendFile(path.join(__dirname ,"..",'buch-homayoom','client','build', 'index.html'));
 });
 
 app.listen(port, () => {
