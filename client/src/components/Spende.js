@@ -5,17 +5,33 @@ export default function Spende() {
   return (
     <div className='header'>
         
-        <div  className='carousel-inner chadu'> 
+        <div  className='carousel-inner chadu '> 
      <Nave></Nave>
-    <div className="intro-header  imgheader">
-      <div className="bg-overlay">
+    <div className="intro-header   ">
+      <div className="bg-overlay m-5 ">
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <div className="intro-message">
-                        <h1>Spende</h1>
-                      <h5> 'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</h5>
-                        <hr className="intro-divider"/>
+                    <div className="intro-message mt-2 text-light">
+                        <h3>Interkulturelle Biografie: “PAPA, WARUM SIND WIR HIER?”</h3>
+                      <h5 className='text-light'>
+                      Der Erfolg des Buches „Papa, warum sind wir hier“ von Homayoon Pardis und Rose
+                      Marie Hoffmann-Riem  hat einen kühnen Traum erfüllt. Eingehende Spenden,
+                      Verkäufe während der Lesungen in allen Stadtteilen Hamburgs und online-
+                      Verkäufe ermöglichen es uns, in der Heimat von Homayoon Pardis einen
+                      Studiengang (20 Studentinnen, 4 Semester) Midwifery (Ausbildung zur
+                      Hebamme) mit 80 % der Studiengebühren zu sponsern. Die Beschäftigung mit
+                      interkulturellen Biografien hilft mir, auch die nachfolgende Aussage zu
+                      akzeptieren: »Die Taliban gewähren Hebammen und Krankenschwestern eine
+                      bezahlte Berufstätigkeit, wenn die Frauen dafür sorgen, nicht unbegleitet zur
+                      Arbeit zu kommen«.
+                      Die nächste Auflage wird noch bald gedruckt. Durch weitere Lesungen, immer
+                      eingerahmt von interkulturellen Themen, wie Alltagsrassismus in Deutschland,
+                      werden wir alles daransetzen, auch noch einen Studiengang von
+                      Krankenschwestern unterstützen zu können. Wer mithelfen will durch Spenden
+                      oder Buchkauf, melde sich bitte bei: papawswh@gmail.com
+                      </h5>
+                        
                      
                     </div>
                 </div>

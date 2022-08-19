@@ -29,15 +29,15 @@ export default function Contact() {
   return (
     <div className='header '>
          
-         <div className='vavContact'> 
+         <div className='vavContact '> 
          <Nave/>
          </div>
      
     
-      <div class="  mt-5 contact" id="contact_me">
-          <div class="row rowContact">
-              <div class="col-md-8 ml-auto mr-auto"> 
-                <h2 class=" ml-auto mr-auto text-center fw-bold  fs-1 text-primary mb-2">Contact Us</h2>
+      <div class="   contact" id="contact_me">
+          <div class="row rowContact ">
+              <div class="col-md-8 ml-auto mr-auto mt-4"> 
+                <h2 class=" ml-auto mr-auto text-center fw-bold  fs-1 text-primary mb-2 mt-5">Contact Us</h2>
                 <h4 class="text-center descrip ">If you have any inquiries or questions, do not hesitate to contact us, we will respond as soon as possible.</h4>
               </div>
             

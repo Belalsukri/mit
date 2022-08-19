@@ -4,18 +4,18 @@
     text-align: center;
     background: url('../../public/images/about5.jpg') no-repeat   ;
     background-size: cover;
-    height: 70vh;
+    height: 100vh;
 }
 .bg-overlay {
-    background:#0038a763;
-    height: 250px;
+    background:#0091ca91;
+    height: 75%;
     margin-left:135px;
     margin-right: 135px;
   }
 
   .intro-message {
       position: relative;
-      padding-top: 1%;
+      padding-top: 3%;
       padding-bottom: 20%;
   }
   /*Big header*/
@@ -34,7 +34,7 @@
   /*small header*/
   .intro-message > h5 {
       text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-      color: rgba(230, 230, 231, 0.7);
+      
   }
 
   @media(max-width:767px) {
@@ -195,7 +195,7 @@ height: 100px;
 }
 .backgrundNav{
   position: absolute;
-  top: 70px;
+  top: 40px;
   width: 80%;
   z-index: 10;
  background-color: #0091ca91 ;
@@ -232,7 +232,7 @@ height: 100px;
  
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 72vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

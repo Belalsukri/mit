@@ -86,32 +86,44 @@ export default function Home() {
       <Header/>
     <div className='home'>
       <div className='container bck '>
-        <div bottom className='row  justify-content-md-center top p-2'> 
-            <h1 className='row  justify-content-md-center'> Our book</h1>
-            <p className='row  justify-content-md-center'> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <div bottom className='row  justify-content-md-center  p-2'> 
+            <h2 className='row  justify-content-md-center'> Das Buch</h2>
+            <h4 className='row  justify-content-md-center'> papa,warum wir sind Hier.</h4>
         </div>
 
         <div class="section-components">
           <div className="container">
             <div className="row">
-              <div> 
-              <div className="col-lg-5 col-md-12 p-2">
-                <h3 className="title">Basic Components
-                </h3><h6 className="description">The core elements of your website</h6>
-                <h5 className="description">We re-styled every Bootstrap element to make it resemble Material Design and also fit with each other. All the Bootstrap components that you need in a development have been re-design with the new look. Besides the numerous basic elements, we have also created additional classes. All these items will help you take your project to the next level.
-                </h5>
+              
+              <div className="col-lg-6 col-md-12 p-2">
+                <h3 className="title">Info über das Buch:
+                </h3><h6 className="description"></h6>
+                <p className="description">
+                In seiner Biografie schildert Homayoon Pardis, dass es möglich ist, eine neue Heimat in
+                Deutschland zu finden, ohne die eigene Herkunft zu vergessen. Denn Ankommen bedeutet
+                viel mehr als das Finden einer Wohnung, eines Jobs und einer Kita für die Kinder. Es geht um
+                Hoffnung, das Gefühl der Zugehörigkeit und den Glauben daran, einen Neustart erfolgreich
+                meistern zu können.
+                <br/>
+                    </p><p>
+                Homayoon Pardis macht deutlich, dass es nicht dem Zufall oder dem Glück überlassen ist, ob
+                Integration in Deutschland gelingt. Eigeninitiative, Disziplin und die Nutzung der
+                Möglichkeiten für Teilhabe und Partizipation, die in Deutschland mit und für Geflüchtete
+                entwickelt wurden, sind für ihn die Schlüssel für ein gelungenes Ankommen in der neuen
+                Heimat.
+                </p>
                 <button class="btn btn-primary mt-4" type="button"><a className="dropdown-item text-light hov font" href="https://hh-hamm.de/produkt/papa-warum-sind-wir-hier/">Kaufen das Buch</a>
                 </button>
               </div>
-              </div >
-              <div> 
+              
+              
               <div className="col-lg-6 col-md-12 ml-auto">
                 {/* <div className="image-container">
                 <img className="social-img" src="./images/buch1.jpg" alt=""/>
                   <img className="social-img1" src="./images/buch5.jpg" alt=""/>
                   
                 </div> */}
-                <div id="cont5">
+                <div >
 
            
                 <div class="rotating">
@@ -132,7 +144,7 @@ export default function Home() {
                         
                     </div>
                 </div>
-              </div>
+              
                 
               </div>
               </div >
