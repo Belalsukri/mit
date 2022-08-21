@@ -15,13 +15,13 @@ export default function Header() {
 
   <Nave/>
     <div className="carousel-item active " data-bs-interval="3000">
-      <img src="./images/papa.jpg" className="d-block w-100 imghederhome" alt="..."/>
+      <div  className="d-block w-100 imghederhome carousel-item-1" alt="..."></div>
     </div>
     <div className="carousel-item " data-bs-interval="2000">
-      <img src="./images/nave2.jpg" className="d-block w-100 imghederhome" alt="..."/>
+    <div  className="d-block w-100 imghederhome carousel-item-2" alt="..."></div>
     </div>
     <div className="carousel-item ">
-      <img src="./images/papa3.jpg" className="d-block w-100 imghederhome" alt="..."/>
+    <div  className="d-block w-100 imghederhome carousel-item-3" alt="..."></div>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

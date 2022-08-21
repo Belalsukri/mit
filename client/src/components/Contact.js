@@ -51,7 +51,7 @@ export default function Contact() {
                    
                     <div class="form-group font-contact">
                       <label for="validationServer01" class="descrip">Your Name</label>
-                      <input  type="text" className={`form-control ${errors.name && "invalid"}`}  
+                      <input  type="text" className={`form-control descrip ${errors.name && "invalid"}`}  
                        {...register("name", { required: "Name is Required" })}
                        onKeyUp={() => {
                          trigger("name");
@@ -67,7 +67,7 @@ export default function Contact() {
                     <div class="form-group font-contact">
                       <label for="validationServer02" class="descrip">Your Email</label>
                       <input  type="email"  
-                      className={`form-control ${errors.email && "invalid"}`}
+                      className={`form-control descrip ${errors.email && "invalid"}`}
                       {...register("email", { required: "Email is Required" ,
                       pattern: {
                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -84,10 +84,10 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
-                <div class="form-group font-contact">
+                <div class="form-group font-contact col-11">
                   <label for="exampleMessage" class="mt-4 descrip ">Your Message</label>
                   <textarea type="text" class="form-control" rows="4" id="exampleMessage" 
-                  className={`form-control ${errors.message && "invalid"}`}
+                  className={`form-control descrip ${errors.message && "invalid"}`}
                   {...register("message", { required: "Message is Required",
                   minLength: {
                     value: 5,

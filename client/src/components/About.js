@@ -39,15 +39,16 @@ export default function About() {
     </div>
     <div className="row p-3 bg-overlay2 mt-3">
       <div className="col-md-6 mt-3">
+        <div className='row'> 
         <div className="card card-profile card-plain">
           <div className="row">
             <div className="col-md-5">
             <div className=" card-header-image ">
-            <img className="imgAbout " src="/images/frau3.jpg"/>
+            <img className="imgAbout mb-5" src="/images/frau3.jpg"/>
             </div>
             </div>
             <div className="col-md-7">
-              <div className="card-body">
+              <div className="card-body crd">
               <h4 className="card-title text-white">Rose Marie Hoffmann-Riem:</h4>
               <p className="card-description text-white">
               geboren 1952, lebt in Hamburg. Sie arbeitet als Beraterin und Biografin. Seit vier Jahren
@@ -60,16 +61,20 @@ export default function About() {
               
           </div>
         </div>
-        
+        <div className="col-md-6 text-center">
+            <a href="#pablo" className="btn  btn-link iconAbout"><i className="fa fa-twitter"></i></a>
+            <a href="#pablo" className="btn  btn-link iconAbout"><i className="fa fa-facebook-square"></i></a>
+            <a href="#pablo" className="btn  btn-link iconAbout"><i className="fa fa-google"></i></a>
+        </div>
+        </div>
       </div>
       <div className="col-md-6 mt-3">
+        <div className='row'> 
         <div className="card card-profile card-plain">
           <div className="row">
             <div className="col-md-5">
             <div className=" card-header-image ">
-
-            <img className="imgAbout " src="/images/mann.jpg"/>
-
+            <img className="imgAbout mb-5" src="/images/mann.jpg"/>
             </div>
             </div>
             <div className="col-md-7">
@@ -84,25 +89,18 @@ export default function About() {
               Projektleiter in sozialen Organisationen in Hamburg.
               </p>
               </div>
-              </div>
-              
-          </div>
-        </div>
-      </div>
-      <div className='row'>
-        <div className="col-md-6 text-center">
+            </div>
+            <div className="col-md-6 text-center">
             <a href="#pablo" className="btn  btn-link iconAbout"><i className="fa fa-twitter"></i></a>
             <a href="#pablo" className="btn  btn-link iconAbout"><i className="fa fa-facebook-square"></i></a>
             <a href="#pablo" className="btn  btn-link iconAbout"><i className="fa fa-google"></i></a>
+            </div>
+          </div>
         </div>
-        
-        <div className="col-md-6 text-center">
-            <a href="#pablo" className="btn  btn-link iconAbout"><i className="fa fa-linkedin"></i></a>
-            <a href="#pablo" className="btn  btn-link iconAbout"><i className="fa fa-facebook-square"></i></a>
-            <a href="#pablo" className="btn  btn-link iconAbout"><i className="fa fa-dribbble"></i></a>
-            <a href="#pablo" className="btn  btn-link iconAbout"><i className="fa fa-google"></i></a>
+
         </div>
       </div>
+     
 
     </div>
     

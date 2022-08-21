@@ -20,10 +20,10 @@ export default function Erfolg() {
 const BlogersElement = state.bloger.map(blog=>{
     return(
       <div className="row mb-5">
-      <div className="col ">
+      <div className="col-md-6 ">
           <img src={blog.imgs[0]} class=" float-end  imgerfolg" alt="..."/>
       </div>
-      <div className="col mt-5">
+      <div className="col-md-6 mt-5">
       <div className="card  carderfolg">
         <div className="card-body p-5">
           <h5 className="card-title text-light">{blog.title}</h5>

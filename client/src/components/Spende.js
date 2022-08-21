@@ -8,7 +8,7 @@ export default function Spende() {
         <div  className='carousel-inner chadu '> 
      <Nave></Nave>
     <div className="intro-header   ">
-      <div className="bg-overlay m-5 ">
+      <div className="bg-overlay m-lg-5 ">
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">

@@ -7,7 +7,7 @@ export default function Footer() {
   <div className="contactus-1 footer " >
     <div className="container">
       <div className="row">
-        <div className="col-6">
+        <div className="col-sm-12 col-lg-6">
           <h4 className=" text-light mt-2">Get in Touch</h4>
           <h6 className=" text-white-50">You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</h6>
           <div className="">

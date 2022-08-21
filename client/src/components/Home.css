@@ -5,13 +5,13 @@
 margin-top: 129px;
 } */
 html{
-    
-    
+
+
    background-color: rgb(232, 237, 250);
     margin: 0;
     padding: 0;
-    border: 0; 
-   
+    border: 0;
+
 }
 h1 , h2 , h3 , h4 , h5 , h6 , p{
   font-family: "Roboto Slab","Times New Roman",serif !important;
@@ -26,10 +26,10 @@ a{
 }
 .bck{
     background-size: 1350px 470px ;
-   
+
 }
 .img{
-    
+
     background: linear-gradient(60deg,rgb(174, 176, 176),#a3a3a3);
 
     background-size: cover;
@@ -43,7 +43,7 @@ a{
     top: -10px;
     border: solid rgb(255 255 255 / 87%) 1px;
     box-shadow:rgb(132 187 255 / 0%) 0px 54px 55px, rgb(67 193 232 / 12%) 0px -12px 30px, rgb(77 206 255 / 18%) 0px 4px 6px, rgb(37 191 235 / 8%) 0px 12px 13px, rgb(32 185 209 / 13%) 0px -3px 5px;
-  
+
 }
 
 .top{
@@ -52,7 +52,7 @@ margin-top: -30px;
 .card1{
    border: none;
     border-radius: 15px;
-    
+
 }
 .footer{
     background-image: url(/public/images/footer7.jpg);
@@ -62,7 +62,7 @@ margin-top: -30px;
 }
 .formHeder{
     box-shadow: 0 5px 20px 0 rgb(2 78 145), 0 13px 24px -11px rgb(2 177 240 / 60%);
-    
+
     background: linear-gradient(60deg,#0262a4,#03b8f7);
     border-radius: 3px;
     padding: 1rem 15px;
@@ -100,21 +100,21 @@ margin-top: -30px;
     margin-top: 60px;
     margin-bottom: 5px;
   }
-  
+
   .section-components .description {
     margin-top: 35px;
   }
-  
+
   .section-components .image-container {
     height: 560px;
     position: relative;
   }
-  
-  
- 
+
+
+
   .section-components .social-img,.section-components .social-img1{
     position: absolute;
-    
+
     /* box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); */
   }
 .social-img{
@@ -123,7 +123,7 @@ margin-top: -30px;
     width: 40%;
     height: 65%;
     box-shadow:10px 5px 10px #3434359b;
-   
+
 }
   .section-components .social-img1 {
     left: 0%;
@@ -132,47 +132,47 @@ margin-top: -30px;
     height: 65%;
     box-shadow:10px 5px 10px #3434359b;
   }
- 
-  
+
+
   /* Section Content */
 
-  
+
   .animated {
     opacity: 1 !important;
   }
- 
+
   /*  animated images  */
-  
-  
+
+
   @keyframes Floatingyr {
     from {
       -webkit-transform: translate(190px, 20px);
     }
-  
+
     65% {
       -webkit-transform: translate(0, 0);
     }
-  
+
     to {
       -webkit-transform: translate(190px, 20px);
     }
   }
-  
+
   @-moz-keyframes Floatingyr {
     from {
       -moz-transform: translate(190px, 20px);
     }
-  
+
     65% {
       -moz-transform: translate(0, 0);
     }
-  
+
     to {
       -moz-transform: translate(190px, 20px);
     }
   }
-  
-  
+
+
   .social-img {
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -197,25 +197,25 @@ margin-top: -30px;
     from {
       -webkit-transform: translate(-10px, 20px);
     }
-  
+
     65% {
       -webkit-transform: translate(0, 0);
     }
-  
+
     to {
       -webkit-transform: translate(-10px, 20px);
     }
   }
-  
+
   @-moz-keyframes Floatingx {
     from {
       -moz-transform: translate(-10px, 20px);
     }
-  
+
     65% {
       -moz-transform: translate(0, 0);
     }
-  
+
     to {
       -moz-transform: translate(-10px, 20px);
     }
@@ -240,45 +240,45 @@ margin-top: -30px;
     -webkit-animation-name: Floatingx;
     -moz-animation-name: Floatingx;
   }
-  
-  
-  
- 
-  
-  
-  
+
+
+
+
+
+
+
   .pin-btn-img {
     animation-duration: 15s;
     -webkit-animation-duration: 15s;
     -moz-animation-duration: 15s;
   }
-  
 
-  
-  
-  
+
+
+
+
   /* Presentation Page OnScroll Animation */
-  
+
   .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
   }
-  
+
   .animated.infinite {
     animation-iteration-count: infinite;
   }
-  
+
   .animated.hinge {
     animation-duration: 2s;
   }
-  
+
   .animated.flipOutX,
   .animated.flipOutY,
   .animated.bounceIn,
   .animated.bounceOut {
     animation-duration: .75s;
   }
-  
+
   .rotating{
 
     transition:15s linear infinite ;
@@ -287,44 +287,44 @@ margin-top: -30px;
     justify-content: center;
     width: 100%;
     height: 100%;
-    
+
     }
     .flip{
     width: 200px;
     height: 270px;
-    
-    
+
+
     position: relative;
     /* transition:15s linear infinite ; */
-    animation:rotate 30s linear infinite;   
+    animation:rotate 30s linear infinite;
     /* -webkit-transition: all 0.8s linear; */
     transform-style: preserve-3d;
-    
+
     top: 25%;
-    
+
     }
     .flip2{
       width: 20px;
       height: 270px;
-      
-      
+
+
       position: relative;
       transition:15s linear infinite ;
-      animation:rotate 30s linear infinite;   
+      animation:rotate 30s linear infinite;
       -webkit-transition: all 0.8s linear;
       transform-style: preserve-3d;
-      
+
       top: 0%;
-      
+
       }
-    
+
     .imgFl{
     width: 200px;
     height: 310px;
     left: 1px;
     position: absolute;
     }
-    
+
     .imgF2{
       width: 20px;
       height: 310px;
@@ -335,59 +335,59 @@ margin-top: -30px;
     position: absolute;
     width: 200px;
     height: 270px;
-    
+
     }
     .flip2 div{
       position: absolute;
       width: 20px;
       height: 270px;
-      
+
       }
     .front{
     transform: translateZ(-1px);
-    
+
     }
     .back{
     transform: rotateY(180deg) translateZ(18px);
-    
-    
+
+
     }
     .left{
     transform: rotateY(-90deg) translateX(-19px);
-    
+
     transform-origin: left;
     width: 20px;
     height: 270px;
     left: 0px;
     position: absolute;
-    
+
     }
-    
+
     .right{
     transform: rotateY(90deg) translateX(199px);
-    
+
     transform-origin: right;
     width: 20px;
     height: 270px;
     left: 0px;
     position: absolute;
-    
+
     }
     .top{
     transform: rotateX(-90deg) translateY(-200px);
-    
+
     transform-origin: top;
-    
+
     }
     @keyframes rotate{
       from{ transform: rotateY(0);}
       to{transform: rotateY(360deg);}
       }
-  
-  
+
+
   /* &&&&&&&&&&&&      mobile              ££££££££££££££££££ */
-  
-  
+
+
   @media screen and (max-width: 585px){
     .section-components .components-macbook{
       width: 110%;
@@ -403,13 +403,13 @@ margin-top: -30px;
       position: absolute;
     }
     .section-components .table-img {
-    
+
       top: 40%;
       height: 260px;
       width: 190px;
       border-radius: 2px;
     }
-    
+
   }
 
 
@@ -442,7 +442,7 @@ margin-top: -30px;
     font-weight: 1000;
     padding: 10px;
     margin: -8px;
-    
+
     height: 35px;
   }
   .daletimg{
@@ -474,10 +474,74 @@ margin-top: -30px;
     color: #fafbfb !important;
   }
   .home-about-left  {
-   
+
     width: 55%;
     height: 55%;
   }
-  
-  
-  
+
+  /* .imghederhome{
+   
+  } */
+  /* .carousel-item{
+    transform: translate(2%, 2%);
+  } */
+  .carousel-item-1{
+    background-image: url(/public/images/papa.jpg);
+    background-origin:initial;
+    position: relative;
+    width: 100%;
+    height: 610px;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    
+    
+  }
+  .carousel-item-2{
+    background-image: url(/public/images/nave2.jpg);
+    position: relative;
+    width: 100%;
+    height: 610px;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+     
+  }
+  .carousel-item-3{
+    background-image: url(/public/images/papa3.jpg);
+    position: relative;
+    width: 100%;
+    height: 610px;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+     
+  }
+  @media(max-width:700px) {
+    .flip{
+      width: 200px;
+      height: 300px;
+      top: 4%;
+      }
+      .home-about-left{
+        width: 100%;
+      }
+      .height{
+      height: 220px !important;
+      }
+      .carousel-item-1{
+        background-image: url(/public/images/nave1.jpg);
+      }
+      .carousel-item-3{
+        background-image: url(/public/images/nave3.jpg);
+      }
+
+  }
+
+  @media(max-width:950px){
+    .flip {
+      top: 0%;
+   
+  }
+  }
+

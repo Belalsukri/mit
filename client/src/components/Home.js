@@ -179,9 +179,9 @@ export default function Home() {
     <Imgshome/>
     
     <div className='container'>  
-    <div className='row justify-content-md-center'> 
-      <div className="col-lg-5 home-about-left no-padding mb-5">
-          <ReactPlayer className="mx-auto d-block img-fluid video-width"
+    <div className='row justify-content-center'> 
+      <div className="col-xm-12 col-lg-5 home-about-left no-padding mb-5">
+          <ReactPlayer className="mx-auto d-block img-fluid video-width height"
               controls={true}
               playbackRate = {1}
           url="https://www.youtube.com/watch?v=-dMqarWkckE"/>
