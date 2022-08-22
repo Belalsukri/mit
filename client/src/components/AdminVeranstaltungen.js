@@ -79,7 +79,7 @@ const deletBtn =(blogerId)=>{
 
   const BlogersElement =state.bloger.map(blog=>{
   return(
-    <div className='card mb-2 col col-lg-5 mx-5  card1 mt-4' key={blog._id}>   
+    <div className='card mb-2  col-lg-5 mx-5  card1 mt-4' key={blog._id}>   
     
             <img className="img card-img-top justify-content-md-center"src={blog.imgs[0]} alt="img"/> 
         <div className="colored-shadow" >

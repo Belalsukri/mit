@@ -29,7 +29,7 @@ export default function Bloger() {
    
     <div  className='carousel-inner chadu'>  
         <Nave></Nave>
-        <img src="../images/banner-gb37dfb6eb_1280.jpg" className="imgheader img" alt="..."/>
+        <img src="../images/banner-gb37dfb6eb_1280.jpg" className="d-block w-100 imgheader" alt="..."/>
     </div>
     <div className='container'>  
         <h1 className='row justify-content-center '> Veranstaltungen</h1>

@@ -17,18 +17,18 @@ export default function Admin() {
         </div> 
             <div className="col-sm-12 mb-5 mt-3  ">
               <div className='d-flex justify-content-center '> 
-              <Link to="/AdminVeranstaltungen " className="badge col-4 " >
+              <Link to="/AdminVeranstaltungen " className="badge col-md-12 " >
               <button type="button" class="col-12 btn  btn-info btn-lg md-4 bt-hov text-light"> Veranstaltungen</button>
               </Link>
               
               </div>
               <div className='d-flex justify-content-center mt-4'> 
-              <Link to="/AdminErfolg" className="badge col-4 "> 
+              <Link to="/AdminErfolg" className="badge col-md-12 "> 
               <button type="button" class="col-12 btn  btn-info btn-lg bt-hov text-light"> Erfolg</button>
               </Link>
               </div>
               <div className='d-flex justify-content-center mt-4'> 
-              <Link to="/Adminimghome" className="badge col-4 "> 
+              <Link to="/Adminimghome" className="badge col-md-12 "> 
               <button type="button" class="col-12 btn  btn-info btn-lg bt-hov text-light"> Fotos hinyufügen</button>
               </Link>
               </div>

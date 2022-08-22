@@ -386,7 +386,9 @@ margin-top: -30px;
 
 
   /* &&&&&&&&&&&&      mobile              ££££££££££££££££££ */
-
+      .logo{
+        height: 25px;
+      }
 
   @media screen and (max-width: 585px){
     .section-components .components-macbook{
@@ -486,7 +488,7 @@ margin-top: -30px;
     transform: translate(2%, 2%);
   } */
   .carousel-item-1{
-    background-image: url(/public/images/papa.jpg);
+    background-image: url(/public/images/papa1-1.jpg);
     background-origin:initial;
     position: relative;
     width: 100%;
@@ -508,7 +510,7 @@ margin-top: -30px;
      
   }
   .carousel-item-3{
-    background-image: url(/public/images/papa3.jpg);
+    background-image: url(/public/images/papa3-3.jpg);
     position: relative;
     width: 100%;
     height: 610px;
@@ -534,6 +536,13 @@ margin-top: -30px;
       }
       .carousel-item-3{
         background-image: url(/public/images/nave3.jpg);
+      }
+      .img {
+        height: 50vh;
+      }
+      .mx-mbil{
+        margin-right:2px !important; 
+        margin-left:2px !important;
       }
 
   }
