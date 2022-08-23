@@ -488,7 +488,7 @@ margin-top: -30px;
     transform: translate(2%, 2%);
   } */
   .carousel-item-1{
-    background-image: url(/public/images/papa1-1.jpg);
+    background-image: url(/public/images/papa1-1-m.jpg);
     background-origin:initial;
     position: relative;
     width: 100%;
@@ -500,7 +500,7 @@ margin-top: -30px;
     
   }
   .carousel-item-2{
-    background-image: url(/public/images/nave2.jpg);
+    background-image: url(/public/images/nave2-m.jpg);
     position: relative;
     width: 100%;
     height: 610px;
@@ -510,7 +510,7 @@ margin-top: -30px;
      
   }
   .carousel-item-3{
-    background-image: url(/public/images/papa3-3.jpg);
+    background-image: url(/public/images/papa3-3-m.jpg);
     position: relative;
     width: 100%;
     height: 610px;
@@ -532,10 +532,10 @@ margin-top: -30px;
       height: 220px !important;
       }
       .carousel-item-1{
-        background-image: url(/public/images/nave1.jpg);
+        background-image: url(/public/images/nave1-m.jpg);
       }
       .carousel-item-3{
-        background-image: url(/public/images/nave3.jpg);
+        background-image: url(/public/images/nave3-m.jpg);
       }
       .img {
         height: 50vh;

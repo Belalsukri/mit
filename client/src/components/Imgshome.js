@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 
 import './Home.css'
 import {getAllImg} from '../services/api';
+import Roll from 'react-reveal/Roll';
 export default function Imgshome() {
   const intialState={
     imgHom:[],
@@ -22,94 +23,15 @@ const images0= state.imgHom.map(img=>{
     return(
     
       <div class="col-sm-4 mb-sm-0 mb-3 mt-3">
-        <div  class="">
+        <Roll left class="">
         <img className='w-100 border-radius-lg bg-cover backimg1' src={img.imgs} />
-        </div>
+        </Roll>
       </div>
   
    )
   
 })
-// const images1= state.imgHom.map(img=>{
-//   return(
-//         <div class="col-sm-3 col-7 mb-sm-0 mb-3">
-//           <Roll left class="">
-//           <img className='w-100 border-radius-lg bg-cover backimg1' src={img.imgs[1]} />
-//           </Roll>
-//         </div>
-//         )
-// })
-// const images2= state.imgHom.map(img=>{
-//   return(
-    
-      
-//         <div class="col-sm-4 col-5 mb-sm-0 mb-3">
-//           <Roll left class="">
-//           <img className='w-100 border-radius-lg bg-cover backimg1' src={img.imgs[2]} />
-//           </Roll>
-//         </div>
-//         )
-// })
-// const images3= state.imgHom.map(img=>{
-//   return(
-    
-      
-//         <div class="col-sm-3 col-7 mb-sm-0 mb-3">
-//           <Roll left class="">
-//           <img className='w-100 border-radius-lg bg-cover backimg1' src={img.imgs[3]} />
-//           </Roll>
-//         </div>
-//         )
-// })
-// const images4= state.imgHom.map(img=>{
-//   return(
-    
-      
-//         <div class="col-sm-4 col-5 mb-sm-0 mb-3">
-//           <Roll left class="">
-//           <img className='w-100 border-radius-lg bg-cover backimg1' src={img.imgs[4]} />
-//           </Roll>
-//         </div>
-//         )
-// })
-// const images5= state.imgHom.map(img=>{
-//   return(
-    
-      
-//         <div class="col-sm-4 col-5 mb-sm-0 mb-3">
-//           <Roll left class="">
-//           <img className='w-100 border-radius-lg bg-cover backimg1' src={img.imgs[5]} />
-//           </Roll>
-//         </div>
-//         )
-// })
-        // <div class="col-sm-3 col-7 mb-sm-0 mb-3">
-        //   <div  class="">
-        //   <img className='w-100  border-radius-lg bg-cover backimg1' src={img.imgs[1]} />
-        //   </div>
-        // </div>
-        // <div class="col-sm-5 mb-sm-0 mb-3">
-        //   <Roll right class="">
-        //       <img className='w-100  border-radius-lg bg-cover backimg1' src={img.imgs[2]} />
-        //   </Roll>
-        // </div>
-      
-      
-        // <div class="col-sm-3 col-7 mb-sm-0 mb-3">
-        //   <Roll bottom  class="w-100  border-radius-lg bg-cover backimg4">
-        //   <img className='w-100  border-radius-lg bg-cover backimg1' src={img.imgs[3]} />
-        //   </Roll>
-        // </div>
-        // <div class="col-sm-5 col-5 mb-sm-0 mb-3">
-        //   <div class="w-100  border-radius-lg bg-cover backimg5">
-        //   <img className='w-100  border-radius-lg bg-cover backimg1' src={img.imgs[4]}  />
-        //   </div>
-        // </div>
-        // <div class="col-sm-4 mb-sm-0 mb-3">
-        //   <Roll bottom  class="w-100  border-radius-lg bg-cover backimg6">
-        //   <img className='w-100  border-radius-lg bg-cover backimg1' src={img.imgs[5]}  />
-        //   </Roll>
-        // </div>
+
       
     
  

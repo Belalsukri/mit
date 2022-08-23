@@ -6,7 +6,7 @@ import ReactPaginate from 'react-paginate';
 import parse from "html-react-parser"
 import Footer from './Footer';
 import Header from './Header';
-
+import Slide from 'react-reveal/Slide';
 
 import ReactPlayer from 'react-player'
 import Imgshome from './Imgshome';
@@ -86,15 +86,15 @@ export default function Home() {
       <Header/>
     <div className='home'>
       <div className='container bck '>
-        <div bottom className='row  justify-content-md-center  p-2'> 
+        <Slide bottom className='row  justify-content-md-center  p-2'> 
             <h2 className='row  justify-content-md-center'> Das Buch</h2>
             <h4 className='row  justify-content-md-center'> papa,warum wir sind Hier.</h4>
-        </div>
+        </Slide>
 
         <div class="section-components">
           <div className="container">
             <div className="row">
-              
+            <Slide  left >
               <div className="col-lg-6 col-md-12 p-2">
                 <h3 className="title">Info über das Buch:
                 </h3><h6 className="description"></h6>
@@ -115,8 +115,8 @@ export default function Home() {
                 <button class="btn btn-primary mt-4" type="button"><a className="dropdown-item text-light hov font" href="https://hh-hamm.de/produkt/papa-warum-sind-wir-hier/">Kaufen das Buch</a>
                 </button>
               </div>
-              
-              
+              </Slide >
+              <Slide  right> 
               <div className="col-lg-6 col-md-12 ml-auto">
                 {/* <div className="image-container">
                 <img className="social-img" src="./images/buch1.jpg" alt=""/>
@@ -129,7 +129,7 @@ export default function Home() {
                 <div class="rotating">
                     <div class="flip ">
                         <div class="front trn">
-                            <img class="imgFl" src="./images/buch5.jpg" alt=""/>
+                            <img class="imgFl" src="./images/nave1-m.jpg" alt=""/>
                         </div>
                         <div class="back trn">
                             <img class="imgFl" src="./images/buch1.jpg" alt=""/>
@@ -148,6 +148,7 @@ export default function Home() {
                 
               </div>
               </div >
+              </Slide >
             </div>
           </div>
         </div>
