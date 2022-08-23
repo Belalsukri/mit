@@ -14,7 +14,7 @@ app.use(fileupload({
     limits: { fileSize: 50 * 1024 * 1024 }
 }))
 
-app.post('/addBlog', (req, res) => {
+app.get('/addBlog', (req, res) => {
   if (req.files) {
   const title = req.body.title
   const dec = req.body.dec
@@ -40,7 +40,7 @@ app.post('/addBlog', (req, res) => {
   }
   })
 
-  app.post('/addErfolg', (req, res) => {
+  app.get('/addErfolg', (req, res) => {
       if (req.files) {
       const title = req.body.title
       const dec = req.body.dec 
@@ -67,7 +67,7 @@ app.post('/addBlog', (req, res) => {
       
       })
 
-      app.post('/addimg', (req, res) => {
+      app.get('/addimg', (req, res) => {
           if (req.files) {
          
           const imgs =[]
@@ -93,7 +93,7 @@ app.post('/addBlog', (req, res) => {
           
           })
           
-          app.post('/getAllImg',(req,res)=>{
+          app.get('/getAllImg',(req,res)=>{
               dataModule.getAllImg().then(bloger => {
                   res.json(bloger)
               }).catch(error => {
@@ -110,7 +110,7 @@ app.post('/addBlog', (req, res) => {
               })
           })
           //////////////////////
-  app.post('/getallbloger',(req,res)=>{
+  app.get('/getallbloger',(req,res)=>{
       dataModule.getAllProducts().then(bloger => {
           res.json(bloger)
       }).catch(error => {
@@ -118,7 +118,7 @@ app.post('/addBlog', (req, res) => {
       })
   })
 
-  app.post('/getallErfolg',(req,res)=>{
+  app.get('/getallErfolg',(req,res)=>{
       dataModule.getAllErfolg().then(bloger => {
           res.json(bloger)
       }).catch(error => {
@@ -126,7 +126,7 @@ app.post('/addBlog', (req, res) => {
       })
   })
   
-  app.post('/deletebloger', (req, res) => {
+  app.get('/deletebloger', (req, res) => {
       const blogerId = req.body.blogerId
       dataModule.deleteProduct(blogerId).then(() => {
           res.json(1)
@@ -146,7 +146,7 @@ app.post('/addBlog', (req, res) => {
   });
 ///////////////
   
-  app.post('/getErfolg', (req, res) => {
+  app.get('/getErfolg', (req, res) => {
       const blogerId = req.body.id
       console.log(blogerId);
       dataModule.getErfolg(blogerId).then(data => {
@@ -155,7 +155,7 @@ app.post('/addBlog', (req, res) => {
           res.json(2)
       })
   });
- app.post('/editbloger', (req, res) => {
+ app.get('/editbloger', (req, res) => {
  
   const {newblogTitle, newDescription,newblogurl,oldImgsUrls,newblogImg,blogid} = req.body
   console.log(newblogTitle, newDescription,newblogurl,oldImgsUrls,newblogImg,blogid )
@@ -181,7 +181,7 @@ res.json(2)
   })
 })
 //////////////////////////////////////////////
-app.post('/editErfolg', (req, res) => {
+app.get('/editErfolg', (req, res) => {
  
   const {newblogTitle, newDescription,oldImgsUrls,newblogImg,blogid} = req.body
   console.log(newblogTitle, newDescription,oldImgsUrls,newblogImg,blogid )
@@ -206,7 +206,7 @@ res.json(blog)
 res.json(2)
   })
 })
-app.post('/deleteerfolg', (req, res) => {
+app.get('/deleteerfolg', (req, res) => {
   const blogerId = req.body.blogerId
   dataModule.deleteerfolg(blogerId).then(() => {
       res.json(1)
@@ -216,7 +216,7 @@ app.post('/deleteerfolg', (req, res) => {
 })
 
 ///////////////sendEmail//////////////
-app.post('/sendEmail', (req, res) => {   
+app.get('/sendEmail', (req, res) => {   
   const name = req.body.name
   const email = req.body.email
   const message = req.body.message
