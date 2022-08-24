@@ -2,6 +2,7 @@ import React, {useRef} from 'react'
 import {Link,useNavigate } from 'react-router-dom'
 import {useForm} from 'react-hook-form'
 import {addBlog} from '../services/api'
+
 export default function AddArticle() {
     const {register,handleSubmit}= useForm()
     const imagesFileInpRef = useRef()
@@ -29,15 +30,9 @@ export default function AddArticle() {
   return (
     <div className="container-fluid bg-light">
         <div className="row justify-content-center ">
-          
-      
-          <div className="col-sm-9 mt-5 pt-5">
-                 
-                
+          <div className="col-sm-9 mt-5 pt-5">  
             <div className="form"> 
-                  
             <form onSubmit={handleSubmit(onSubmits)}>
-                     
                 <div className="form-group row mb-3">
                   <strong htmlFor="colFormLabel  " className="col-sm-2 col-form-label  text-primary">Titel </strong>
                   <div className="col-sm-6">
