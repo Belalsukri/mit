@@ -170,7 +170,7 @@ app.post('/addBlog', (req, res) => {
   }
 
   let oldImgsUrlsArr =  JSON.parse(oldImgsUrls)
-  oldImgsUrlsArr = oldImgsUrlsArr.map(element => {
+  oldImgsUrlsArr = oldImgsUrls.map(element => {
       return element.substr(element.indexOf('/uplodeFiles/'))
   })
   console.log('old img ' +oldImgsUrlsArr);
