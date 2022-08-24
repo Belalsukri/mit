@@ -59,7 +59,7 @@ function addProduct(title, dec,url,imgs) {
                           let ext = img.name.substr(img.name.lastIndexOf('.'))
                           // set the new image name
                           let newName = title.trim().replace(/ /g, '_') + '_' + idx + ext
-                          img.mv('./client/build/uplodeFiles/' + newName)
+                          img.mv('/uplodeFiles/' + newName)
                           imgsArr.push('/uplodeFiles/' + newName)
                     });
                       const newProduct =new Product({
@@ -123,7 +123,7 @@ function getAllProducts() {
 
 function deleteProduct(blogerId) {
     return new Promise((resolve, reject) => {
-        uploadDir = path.join(__dirname, '../client/build');
+        uploadDir = path.join(__dirname, '/build');
         Product.findOne({_id: blogerId}).then( bloger=>{
 
             bloger.imgs.forEach(img => {
@@ -200,12 +200,12 @@ function updateProduct(newblogTitle, newDescription,newblogurl,oldImgsUrlsArr,ne
             console.log(imgExt);
             const newImgName=newblogTitle.trim().replace(/ /g, '_') + '_'+blogId+'_'+ idx +imgExt
             newImgsUrlsArr.push('/uplodeFiles/'+newImgName)
-            img.mv('./client/build/uplodeFiles/' + newImgName)
+            img.mv('./uplodeFiles/' + newImgName)
         })
         deletedImgs.forEach(file=>{
             console.log(file);
             if (fs.existsSync('./build'+file)) {
-                fs.unlinkSync('../client/build'+file)
+                fs.unlinkSync('./build'+file)
             }
         })
 
