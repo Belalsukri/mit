@@ -49,7 +49,7 @@ console.log(state.bloger);
    
       <div  className='carousel-inner chadu'>  
         <Nave></Nave>
-        <img src="./images/nav1.png" className="d-block w-100 imgheader " alt="..."/>
+        <img src="./images/erfolg.png" className="d-block w-100 imgheader " alt="..."/>
       </div>
       
       <div className="container ">
