@@ -1,7 +1,7 @@
 {
   "name": "buch-homayoom",
   "version": "1.0.0",
-  "proxy": "http://localhost:3000",
+  "proxy": "https://homayoon.herokuapp.com/",
   "description": "",
   "main": "server.js",
   "scripts": {

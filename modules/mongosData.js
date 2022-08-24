@@ -59,7 +59,7 @@ function addProduct(title, dec,url,imgs) {
                           let ext = img.name.substr(img.name.lastIndexOf('.'))
                           // set the new image name
                           let newName = title.trim().replace(/ /g, '_') + '_' + idx + ext
-                          img.mv('./client/public/uplodeFiles/' + newName)
+                          img.mv('./client/build/uplodeFiles/' + newName)
                           imgsArr.push('/uplodeFiles/' + newName)
                     });
                       const newProduct =new Product({
@@ -123,7 +123,7 @@ function getAllProducts() {
 
 function deleteProduct(blogerId) {
     return new Promise((resolve, reject) => {
-        uploadDir = path.join(__dirname, '../client/public');
+        uploadDir = path.join(__dirname, '../client/build');
         Product.findOne({_id: blogerId}).then( bloger=>{
 
             bloger.imgs.forEach(img => {
@@ -200,12 +200,12 @@ function updateProduct(newblogTitle, newDescription,newblogurl,oldImgsUrlsArr,ne
             console.log(imgExt);
             const newImgName=newblogTitle.trim().replace(/ /g, '_') + '_'+blogId+'_'+ idx +imgExt
             newImgsUrlsArr.push('/uplodeFiles/'+newImgName)
-            img.mv('./client/public/uplodeFiles/' + newImgName)
+            img.mv('./client/build/uplodeFiles/' + newImgName)
         })
         deletedImgs.forEach(file=>{
             console.log(file);
-            if (fs.existsSync('./public'+file)) {
-                fs.unlinkSync('../client/public'+file)
+            if (fs.existsSync('./build'+file)) {
+                fs.unlinkSync('../client/build'+file)
             }
         })
 
@@ -268,7 +268,7 @@ function addErfolg(title, dec,imgs) {
                           let ext = img.name.substr(img.name.lastIndexOf('.'))
                           // set the new image name
                           let newName = title.trim().replace(/ /g, '_') + '_' + idx + ext
-                          img.mv('./client/public/uplodeFiles/' + newName)
+                          img.mv('./client/build/uplodeFiles/' + newName)
                           imgsArr.push('/uplodeFiles/' + newName)
                     });
                       const newProduct =new Erfolg({
@@ -367,12 +367,12 @@ function updateErfolg(newblogTitle, newDescription,oldImgsUrlsArr,newImgs,blogId
             console.log(imgExt);
             const newImgName=newblogTitle.trim().replace(/ /g, '_') + '_'+blogId+'_'+ idx +imgExt
             newImgsUrlsArr.push('/uplodeFiles/'+newImgName)
-            img.mv('./client/public/uplodeFiles/' + newImgName)
+            img.mv('./client/build/uplodeFiles/' + newImgName)
         })
         deletedImgs.forEach(file=>{
             console.log(file);
-            if (fs.existsSync('./public'+file)) {
-                fs.unlinkSync('../client/public'+file)
+            if (fs.existsSync('./build'+file)) {
+                fs.unlinkSync('../client/build'+file)
             }
         })
          await Erfolg.updateOne({_id: blogId},{
@@ -396,7 +396,7 @@ function updateErfolg(newblogTitle, newDescription,oldImgsUrlsArr,newImgs,blogId
 ///////////////////
 function deleteerfolg(blogerId) {
     return new Promise((resolve, reject) => {
-        uploadDir = path.join(__dirname, '../client/public');
+        uploadDir = path.join(__dirname, '../client/build');
         Erfolg.findOne({_id: blogerId}).then( bloger=>{
 
             bloger.imgs.forEach(img => {
@@ -452,7 +452,7 @@ function addimg(imgs) {
                           let ext = img.name
                           // set the new image name
                           
-                          img.mv('./client/public/uplodeFilesimg/' + ext)
+                          img.mv('./client/build/uplodeFilesimg/' + ext)
                           imgsArr.push('/uplodeFilesimg/' + ext)
                     });
                       const newProduct =new imghome({
@@ -510,7 +510,7 @@ function getAllImg() {
   //.............................deleteimg
   function deleteimg(blogerId) {
     return new Promise((resolve, reject) => {
-        uploadDir = path.join(__dirname, '../client/public');
+        uploadDir = path.join(__dirname, '../client/build');
         imghome.findOne({_id: blogerId}).then( bloger=>{
 
             bloger.imgs.forEach(img => {

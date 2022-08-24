@@ -6,9 +6,6 @@ export const addBlog = (title, dec,url,  productImg) => {
         fd.append('dec', dec)
        
             fd.append('productImg' , productImg[0])
-        
-        
-
         fetch('/addBlog', {
             method: 'POST',
             body: fd

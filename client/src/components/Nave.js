@@ -37,9 +37,9 @@ export default function Nave() {
                 <li><Link className="dropdown-item text-light hov font" to="/Spende">Spende</Link></li>
               </ul>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <Link className="nav-link text-light linkHover font" to="/Admin">Admin</Link>
-            </li> */}
+            </li>
           </ul>
 
         </div>
