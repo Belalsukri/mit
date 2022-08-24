@@ -10,7 +10,7 @@ export const addBlog = (title, dec,url,  productImg) => {
         
 
         fetch('/addBlog', {
-            method: 'GET',
+            method: 'POST',
             body: fd
         }).then(response => {
             if (response.status === 200) {
@@ -61,7 +61,7 @@ export const allBlogerPost=()=>{
                 blogerId,
             }
             fetch('/deletebloger',{
-                method:'GET',
+                method:'POST',
                 headers:{
                     'Content-Type':'application/json'
                 },
@@ -192,7 +192,7 @@ export const allBlogerPost=()=>{
                 
         
                 fetch('/AddErfolg', {
-                    method: 'GET',
+                    method: 'POST',
                     body: fd
                 }).then(response => {
                     if (response.status === 200) {
@@ -304,7 +304,7 @@ export const allBlogerPost=()=>{
                 blogerId,
             }
             fetch('/deleteerfolg',{
-                method:'GET',
+                method:'POST',
                 headers:{
                     'Content-Type':'application/json'
                 },
@@ -365,7 +365,7 @@ export const allBlogerPost=()=>{
                     fd.append('productImg' + i, productImg[i])
                 }
             fetch('/addimg', {
-                method: 'GET',
+                method: 'POST',
                 body: fd
             }).then(response => {
                 if (response.status === 200) {
@@ -418,7 +418,7 @@ export const allBlogerPost=()=>{
                     blogerId,
                 }
                 fetch('/deleteimg',{
-                    method:'GET',
+                    method:'POST',
                     headers:{
                         'Content-Type':'application/json'
                     },

@@ -14,7 +14,7 @@ app.use(fileupload({
     limits: { fileSize: 50 * 1024 * 1024 }
 }))
 
-app.get('/addBlog', (req, res) => {
+app.post('/addBlog', (req, res) => {
   if (req.files) {
   const title = req.body.title
   const dec = req.body.dec
@@ -40,7 +40,7 @@ app.get('/addBlog', (req, res) => {
   }
   })
 
-  app.get('/addErfolg', (req, res) => {
+  app.post('/addErfolg', (req, res) => {
       if (req.files) {
       const title = req.body.title
       const dec = req.body.dec 
@@ -67,7 +67,7 @@ app.get('/addBlog', (req, res) => {
       
       })
 
-      app.get('/addimg', (req, res) => {
+      app.post('/addimg', (req, res) => {
           if (req.files) {
          
           const imgs =[]
@@ -126,7 +126,7 @@ app.get('/addBlog', (req, res) => {
       })
   })
   
-  app.get('/deletebloger', (req, res) => {
+  app.post('/deletebloger', (req, res) => {
       const blogerId = req.body.blogerId
       dataModule.deleteProduct(blogerId).then(() => {
           res.json(1)
@@ -206,7 +206,7 @@ res.json(blog)
 res.json(2)
   })
 })
-app.get('/deleteerfolg', (req, res) => {
+app.post('/deleteerfolg', (req, res) => {
   const blogerId = req.body.blogerId
   dataModule.deleteerfolg(blogerId).then(() => {
       res.json(1)
