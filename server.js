@@ -2,7 +2,8 @@ const express = require('express')
 const path = require('path');
 const fileupload = require('express-fileupload')
 const dataModule = require('./modules/mongosData')
-const emailSender = require('./modules/emailSender')
+const emailSender = require('./modules/emailSender');
+const { log } = require('console');
 
 const port = process.env.PORT || 5000
 const app =express()
@@ -15,6 +16,7 @@ app.use(fileupload({
 }))
 
 app.post('/addBlog', (req, res) => {
+console.log(req.files);
   if (req.files) {
   const title = req.body.title
   const dec = req.body.dec
