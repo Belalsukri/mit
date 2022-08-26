@@ -2,4 +2,4 @@
 JWT_SECRET= jwt-secret
 DB_URI: mongodb+srv://belal:0966405529@cluster0.l6boz.mongodb.net/?retryWrites=true&w=majority
 
-web: npm run dev
+web.1: npm run dev
