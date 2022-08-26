@@ -94,7 +94,7 @@ app.post('/addBlog', (req, res) => {
           
           })
           
-          app.post('/getAllImg',(req,res)=>{
+          app.get('/getAllImg',(req,res)=>{
               dataModule.getAllImg().then(bloger => {
                   res.json(bloger)
               }).catch(error => {
@@ -111,7 +111,7 @@ app.post('/addBlog', (req, res) => {
               })
           })
           //////////////////////
-  app.post('/getallbloger',(req,res)=>{
+  app.get('/getallbloger',(req,res)=>{
       dataModule.getAllProducts().then(bloger => {
           res.json(bloger)
       }).catch(error => {
@@ -119,7 +119,7 @@ app.post('/addBlog', (req, res) => {
       })
   })
 
-  app.post('/getallErfolg',(req,res)=>{
+  app.get('/getallErfolg',(req,res)=>{
       dataModule.getAllErfolg().then(bloger => {
           res.json(bloger)
       }).catch(error => {
@@ -136,7 +136,7 @@ app.post('/addBlog', (req, res) => {
       })
   })
   
-  app.post('/getbloger', (req, res) => {
+  app.get('/getbloger', (req, res) => {
       const blogerId = req.body.id
       console.log(blogerId);
       dataModule.getProduct(blogerId).then(data => {
@@ -147,7 +147,7 @@ app.post('/addBlog', (req, res) => {
   });
 ///////////////
   
-  app.post('/getErfolg', (req, res) => {
+  app.get('/getErfolg', (req, res) => {
       const blogerId = req.body.id
       console.log(blogerId);
       dataModule.getErfolg(blogerId).then(data => {

@@ -32,7 +32,7 @@ export const addBlog = (title, dec,url,  productImg) => {
 export const allBlogerPost=()=>{
     return new Promise((resolve, reject)=>{
      fetch('/getallbloger',{
-         method:'POST',
+         method:'GET',
          headers:{
             'Content-Type':'application/json'
         },
@@ -91,7 +91,7 @@ export const allBlogerPost=()=>{
                 id: blogerId
             }
             fetch('/getbloger', {
-                method: 'POST',
+                method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -242,7 +242,7 @@ export const allBlogerPost=()=>{
                 id: blogerId
             }
             fetch('/getErfolg', {
-            method: 'POST',
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -388,7 +388,7 @@ export const allBlogerPost=()=>{
     export const getAllImg=()=>{
         return new Promise((resolve, reject)=>{
          fetch('/getAllImg',{
-             method:'POST',
+             method:'GET',
              headers:{
                 'Content-Type':'application/json'
             },
