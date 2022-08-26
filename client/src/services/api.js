@@ -214,7 +214,7 @@ export const allBlogerPost=()=>{
         export const allErfolgPost=()=>{
             return new Promise((resolve, reject)=>{
              fetch('/getallErfolg',{
-                 method:'POST',
+                 method:'GET',
                  headers:{
                     'Content-Type':'application/json;charset=utf-8'
                 },

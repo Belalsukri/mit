@@ -119,7 +119,7 @@ app.post('/addBlog', (req, res) => {
       })
   })
 
-  app.post('/getallErfolg',(req,res)=>{
+  app.get('/getallErfolg',(req,res)=>{
       dataModule.getAllErfolg().then(bloger => {
           res.json(bloger)
       }).catch(error => {
