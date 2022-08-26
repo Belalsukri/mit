@@ -94,7 +94,7 @@ app.post('/addBlog', (req, res) => {
           
           })
           
-          app.get('/getAllImg',(req,res)=>{
+          app.post('/getAllImg',(req,res)=>{
               dataModule.getAllImg().then(bloger => {
                   res.json(bloger)
               }).catch(error => {
@@ -111,7 +111,7 @@ app.post('/addBlog', (req, res) => {
               })
           })
           //////////////////////
-  app.get('/getallbloger',(req,res)=>{
+  app.post('/getallbloger',(req,res)=>{
       dataModule.getAllProducts().then(bloger => {
           res.json(bloger)
       }).catch(error => {
@@ -119,7 +119,7 @@ app.post('/addBlog', (req, res) => {
       })
   })
 
-  app.get('/getallErfolg',(req,res)=>{
+  app.post('/getallErfolg',(req,res)=>{
       dataModule.getAllErfolg().then(bloger => {
           res.json(bloger)
       }).catch(error => {
@@ -147,7 +147,7 @@ app.post('/addBlog', (req, res) => {
   });
 ///////////////
   
-  app.get('/getErfolg', (req, res) => {
+  app.post('/getErfolg', (req, res) => {
       const blogerId = req.body.id
       console.log(blogerId);
       dataModule.getErfolg(blogerId).then(data => {
@@ -156,7 +156,7 @@ app.post('/addBlog', (req, res) => {
           res.json(2)
       })
   });
- app.get('/editbloger', (req, res) => {
+ app.post('/editbloger', (req, res) => {
  
   const {newblogTitle, newDescription,newblogurl,oldImgsUrls,newblogImg,blogid} = req.body
   console.log(newblogTitle, newDescription,newblogurl,oldImgsUrls,newblogImg,blogid )
@@ -182,7 +182,7 @@ res.json(2)
   })
 })
 //////////////////////////////////////////////
-app.get('/editErfolg', (req, res) => {
+app.post('/editErfolg', (req, res) => {
  
   const {newblogTitle, newDescription,oldImgsUrls,newblogImg,blogid} = req.body
   console.log(newblogTitle, newDescription,oldImgsUrls,newblogImg,blogid )
@@ -217,7 +217,7 @@ app.post('/deleteerfolg', (req, res) => {
 })
 
 ///////////////sendEmail//////////////
-app.get('/sendEmail', (req, res) => {   
+app.post('/sendEmail', (req, res) => {   
   const name = req.body.name
   const email = req.body.email
   const message = req.body.message

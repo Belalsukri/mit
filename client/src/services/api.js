@@ -32,7 +32,7 @@ export const addBlog = (title, dec,url,  productImg) => {
 export const allBlogerPost=()=>{
     return new Promise((resolve, reject)=>{
      fetch('/getallbloger',{
-         method:'GET',
+         method:'POST',
          headers:{
             'Content-Type':'application/json'
         },
@@ -91,7 +91,7 @@ export const allBlogerPost=()=>{
                 id: blogerId
             }
             fetch('/getbloger', {
-                method: 'GET',
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -131,7 +131,7 @@ export const allBlogerPost=()=>{
             fd.append('oldImgs',JSON.stringify(oldImgs))
             fd.append('blogId', blogId)
             fetch('/updateBlog', {
-                method: 'GET',
+                method: 'POST',
                 body: fd
             }).then(response => {
                 if(response.status === 200) {
@@ -163,7 +163,7 @@ export const allBlogerPost=()=>{
                 fd.append('blogid', blogid)
                 
                 fetch('/editbloger', {
-                    method: 'GET',
+                    method: 'POST',
                     body: fd
                 }).then(response => {
                     if(response.status === 200) {
@@ -214,7 +214,7 @@ export const allBlogerPost=()=>{
         export const allErfolgPost=()=>{
             return new Promise((resolve, reject)=>{
              fetch('/getallErfolg',{
-                 method:'GET',
+                 method:'POST',
                  headers:{
                     'Content-Type':'application/json'
                 },
@@ -242,7 +242,7 @@ export const allBlogerPost=()=>{
                 id: blogerId
             }
             fetch('/getErfolg', {
-            method: 'GET',
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -277,7 +277,7 @@ export const allBlogerPost=()=>{
                     fd.append('blogid', blogid)
                     
                     fetch('/editErfolg', {
-                        method: 'GET',
+                        method: 'POST',
                         body: fd
                     }).then(response => {
                         if(response.status === 200) {
@@ -336,7 +336,7 @@ export const allBlogerPost=()=>{
         }
         return new Promise((resolve, reject) => {
             fetch('/sendEmail',{
-                method:'GET',
+                method:'POST',
                 headers:{
                     'Content-Type':'application/json'
                 },
@@ -388,7 +388,7 @@ export const allBlogerPost=()=>{
     export const getAllImg=()=>{
         return new Promise((resolve, reject)=>{
          fetch('/getAllImg',{
-             method:'GET',
+             method:'POST',
              headers:{
                 'Content-Type':'application/json'
             },
