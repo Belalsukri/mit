@@ -136,7 +136,7 @@ app.post('/addBlog', (req, res) => {
       })
   })
   
-  app.post('/getbloger', (req, res) => {
+  app.get('/getbloger', (req, res) => {
       const blogerId = req.body.id
       console.log(blogerId);
       dataModule.getProduct(blogerId).then(data => {
