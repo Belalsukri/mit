@@ -91,7 +91,7 @@ export const allBlogerPost=()=>{
                 id: blogerId
             }
             fetch('/getbloger', {
-                method: 'GET',
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
