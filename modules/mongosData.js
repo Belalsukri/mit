@@ -160,9 +160,13 @@ function getProduct(id) {
         connect().then(() => {
             
             Product.findOne({_id: id}).then(blogerId=>{
+                if(blogerId) {
+                    blogerId.id = blogerId._id
                 resolve(blogerId)
-                //  console.log('db'+ {blogerId});
-
+                  console.log('db'+ {blogerId});
+            } else {
+                reject(new Error('can not find a book with this id : ' + id))
+            }
           }).catch(error => {
 
             reject(error)
@@ -199,13 +203,13 @@ function updateProduct(newblogTitle, newDescription,newblogurl,oldImgsUrlsArr,ne
             const imgExt =img.name.substr(img.name.lastIndexOf('.'))
             console.log(imgExt);
             const newImgName=newblogTitle.trim().replace(/ /g, '_') + '_'+blogId+'_'+ idx +imgExt
-            newImgsUrlsArr.push('./build/uplodeFiles/'+newImgName)
-            img.mv('./build/uplodeFiles/' + newImgName)
+            newImgsUrlsArr.push('/uplodeFiles/'+newImgName)
+            img.mv('./client/build/uplodeFiles/' + newImgName)
         })
         deletedImgs.forEach(file=>{
             console.log(file);
-            if (fs.existsSync('./build'+file)) {
-                fs.unlinkSync('./build'+file)
+            if (fs.existsSync('./public'+file)) {
+                fs.unlinkSync('./public'+file)
             }
         })
 

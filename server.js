@@ -119,7 +119,7 @@ app.post('/addBlog', (req, res) => {
       })
   })
 
-  app.get('/getallErfolg',(req,res)=>{
+  app.post('/getallErfolg',(req,res)=>{
       dataModule.getAllErfolg().then(bloger => {
           res.json(bloger)
       }).catch(error => {
@@ -147,7 +147,7 @@ app.post('/addBlog', (req, res) => {
   });
 ///////////////
   
-  app.get('/getErfolg', (req, res) => {
+  app.post('/getErfolg', (req, res) => {
       const blogerId = req.body.id
       console.log(blogerId);
       dataModule.getErfolg(blogerId).then(data => {
@@ -171,7 +171,7 @@ app.post('/addBlog', (req, res) => {
   }
 
   let oldImgsUrlsArr =  JSON.parse(oldImgsUrls)
-  oldImgsUrlsArr = oldImgsUrls.map(element => {
+  oldImgsUrlsArr = oldImgsUrlsArr.map(element => {
       return element.substr(element.indexOf('/uplodeFiles/'))
   })
   console.log('old img ' +oldImgsUrlsArr);
@@ -241,7 +241,7 @@ app.post('/sendEmail', (req, res) => {
 
 app.use(express.static(path.join(__dirname ,'client','build')));
 app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname ,'client','build','index.html', 'utf-8'));
+  res.sendFile(path.join(__dirname ,'client','build','index.html'));
 });
 
 app.listen(port, () => {

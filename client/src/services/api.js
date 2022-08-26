@@ -93,9 +93,9 @@ export const allBlogerPost=()=>{
             fetch('/getbloger', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json;charset=utf-8'
                 },
-                body: JSON.stringify(data)
+                body: JSON.stringify(data),
             }).then(response => {
                 if (response.status === 200) {
                     response.json().then(data => {
@@ -216,19 +216,17 @@ export const allBlogerPost=()=>{
              fetch('/getallErfolg',{
                  method:'POST',
                  headers:{
-                    'Content-Type':'application/json'
+                    'Content-Type':'application/json;charset=utf-8'
                 },
              }).then(response => {
-                if (response.status === 200) {
+               
                     response.json().then(data => {
                        
                         resolve(data)
                     }).catch(error => {
                         reject(error)
                     })
-                }else{
-                    reject(new Error('can not send data to server. response number is :'+response.status))
-                }
+              
             }).catch(error => {
                 reject(error)
             })
@@ -242,7 +240,7 @@ export const allBlogerPost=()=>{
                 id: blogerId
             }
             fetch('/getErfolg', {
-            method: 'GET',
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
