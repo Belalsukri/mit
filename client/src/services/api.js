@@ -6,18 +6,23 @@ export const addBlog = (title, dec,url,  productImg) => {
         fd.append('dec', dec)
        
             fd.append('productImg' , productImg[0])
+        
+        
+
         fetch('/addBlog', {
             method: 'POST',
             body: fd
         }).then(response => {
-           
+            if (response.status === 200) {
                 response.json().then(data => {
                     console.log(data);
                     resolve(data)
                 }).catch(error => {
                     reject(error)
                 })
-           
+            } else {
+                reject(new Error('can not send the data, response number is: ' + response.status))
+            }
         }).catch(error => {
             reject(error)
         })

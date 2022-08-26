@@ -16,31 +16,30 @@ app.use(fileupload({
 }))
 
 app.post('/addBlog', (req, res) => {
-console.log(req.files);
-  if (req.files) {
-  const title = req.body.title
-  const dec = req.body.dec
-  const url = req.body.url 
-  const imgs =[]
-  for(const key in req.files){
-      if (req.files[key].mimetype !='application/pdf') {
-          imgs.push(req.files[key])   
-      }
-  }    
-  console.log( title,dec,url,imgs);
-      dataModule.addProduct(title, dec,url,imgs).then(() => {
-          res.json(1)
-      }).catch(error => {
-          if (error == 3) {
-              res.json(3)
-          }else{
-              res.json(4)
-          }
-      })
-  } else {
-      res.json(2)
-  }
-  })
+    if (req.files) {
+    const title = req.body.title
+    const dec = req.body.dec
+    const url = req.body.url 
+    const imgs =[]
+    for(const key in req.files){
+        if (req.files[key].mimetype !='application/pdf') {
+            imgs.push(req.files[key])   
+        }
+    }    
+    console.log( title,dec,url,imgs);
+        dataModule.addProduct(title, dec,url,imgs).then(() => {
+            res.json(1)
+        }).catch(error => {
+            if (error == 3) {
+                res.json(3)
+            }else{
+                res.json(4)
+            }
+        })
+    } else {
+        res.json(2)
+    }
+    })
 
   app.post('/addErfolg', (req, res) => {
       if (req.files) {
@@ -53,7 +52,7 @@ console.log(req.files);
                
           }
       }    
-      console.log( title,dec,imgs);
+      console.log( req.files);
           dataModule.addErfolg(title, dec,imgs).then(() => {
               res.json(1)
           }).catch(error => {
