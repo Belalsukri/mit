@@ -91,27 +91,26 @@ export const allBlogerPost=()=>{
                 id: blogerId
             }
             fetch('/getbloger', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json;charset=utf-8'
-                },
-                body: JSON.stringify(data),
-            }).then(response => {
-                if (response.status === 200) {
-                    response.json().then(data => {
-                        resolve(data)
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+                }).then(response => {
+                    if (response.status === 200) {
+                            response.json().then(data => {
+                                resolve(data)
+                            }).catch(error => {
+                                reject(error)
+                            })
+                        } else {
+                            reject(new Error('can not get the data, response number is: ' + response.status))
+                        }
                     }).catch(error => {
                         reject(error)
                     })
-                } else {
-                    reject(new Error('can not get the data, response number is: ' + response.status))
-                }
-            }).catch(error => {
-                reject(error)
-            })
-        })
-    }
-
+                })
+            }                 
     export const updateBlog=(title, textarea, url,imgs,oldImgss,blogId)=>{
         return new Promise((resolve, reject) => {
             const fd = new FormData()
