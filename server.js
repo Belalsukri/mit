@@ -17,7 +17,7 @@ app.use(fileupload({
 
 app.post('/addBlog', (req, res) => {
 console.log(req.files);
-  
+  if (req.files) {
   const title = req.body.title
   const dec = req.body.dec
   const url = req.body.url 
@@ -37,7 +37,9 @@ console.log(req.files);
               res.json(4)
           }
       })
-  
+  } else {
+      res.json(2)
+  }
   })
 
   app.post('/addErfolg', (req, res) => {
