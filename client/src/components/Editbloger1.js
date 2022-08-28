@@ -1,6 +1,6 @@
 import React,{useState,useEffect,useRef} from 'react'
 // import Tinymce from './Tinymce'
-import {getBlogPost ,editBlogrePost} from '../services/api'
+import {getBlogPost ,editBlogrePost ,postBlogerId} from '../services/api'
 import {useNavigate, useParams} from 'react-router-dom'
 export default function Editbloger1() {
   let navigate = useNavigate();
@@ -16,6 +16,20 @@ export default function Editbloger1() {
   const [state, setState] = useState(initialState)
  
   useEffect(() => {
+  //   postBlogerId(params.id).then(id=>{
+  //     switch (id) {
+  //       case 1:
+  //         console.log(1); 
+  //       break;
+  //     default:
+        
+  //       break;
+  //   }
+  // }).catch(error => {
+  //   alert(error)
+  // })
+
+    
     getBlogPost(params.id).then(data => {
       console.log(data);
     setState({

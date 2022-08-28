@@ -155,7 +155,8 @@ function deleteProduct(blogerId) {
   }
 
     // ..................................................................... //
-function getProduct(id) {
+function postProductId(id) {
+
     return new Promise((resolve, reject) => {
         connect().then(() => {
             
@@ -175,6 +176,36 @@ function getProduct(id) {
 
             reject(error)
         })
+    })
+
+}
+
+function getProduct(id) {
+    return new Promise((resolve, reject) => {
+       
+        connect().then(() => {
+        //     const prodId =postProductId(blogerId)
+        // console.log(" prodId",prodId);
+           
+            Product.findOne({_id: id}).then(blogerId=>{
+                if(blogerId) {
+                    blogerId.id = blogerId._id
+                resolve(blogerId)
+                  console.log('db'+ {blogerId});
+            } else {
+                reject(new Error('can not find a book with this id : ' + id))
+            }
+          }).catch(error => {
+
+            reject(error)
+        })
+          }).catch(error => {
+
+            reject(error)
+        })
+            
+            
+          
     })
 
 }
@@ -560,4 +591,5 @@ module.exports={
     addimg,
     getAllImg,
     deleteimg,
+    postProductId,
 }
