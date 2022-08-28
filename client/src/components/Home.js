@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import './Home.css'
-import {allBlogerPost,getAllImg} from '../services/api';
+import {allBlogerPost} from '../services/api';
 
 import ReactPaginate from 'react-paginate';
 import parse from "html-react-parser"
