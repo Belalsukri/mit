@@ -14,7 +14,6 @@ export default function Bloger() {
     const [state,setState] = useState(intialState) 
     useEffect(()=>{
         getBlogPost(params.id).then(data => {
-            console.log(data);
           setState({
             ...state,
             bloger: data,
@@ -28,15 +27,14 @@ export default function Bloger() {
 <div className='header'>
    
     <div  className='carousel-inner chadu'>  
-        <Nave></Nave>
-        <img src="../images/banner-gb37dfb6eb_1280.jpg" className="d-block w-100 imgheader" alt="..."/>
+        <Nave />        <img src="../images/banner-gb37dfb6eb_1280.jpg" className="d-block w-100 imgheader" alt="..."/>
     </div>
     <div className='container'>  
-        <h1 className='row justify-content-center '> Veranstaltungen</h1>
+        <h1 id="card" className='row justify-content-center '> Veranstaltungen</h1>
     </div >
-    <div class="container">  
+    <div className="container">  
     <div className='row justify-content-md-center'> 
-    <div className='card mb-5 col col-lg-8 card1 mt-5 blogercard ' > 
+    <div className='card mb-5 col col-lg-8 card1 mt-5 blogercard '  > 
         <div className="card-body">
             <h3 className="card-category  text-info">{state.bloger.title}</h3>        
             <p className="card-description"> {state.bloger.description} </p>
@@ -50,7 +48,7 @@ export default function Bloger() {
     </div>
     </div>   
     </div>
-      <Footer/>
+      {/* <Footer/> */}
 </div>
  
   )

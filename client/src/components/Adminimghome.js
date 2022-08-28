@@ -14,10 +14,8 @@ export default function Adminimghome() {
     confirmModalPayLoad: null
   }
   const [state,setState] = useState(intialState)
- 
   useEffect(()=>{
     getAllImg().then(data=>{
-      console.log(data);
       switch (data) {
         case 1:
             navigate('/Erfolg')
@@ -41,7 +39,6 @@ export default function Adminimghome() {
   const deleteConferm =(blogerId)=>{
        
     deleteimg(blogerId).then(dat=>{
-        console.log(dat);
         switch (dat) {
             case 1:
               navigate('/Admin')
@@ -65,7 +62,6 @@ export default function Adminimghome() {
 
 }
 const deletBtn =(blogerId)=>{
-     
   setState({
       ...state,
       confirmModalShow: true,

@@ -1,22 +1,18 @@
 import React,{useEffect,useState} from 'react'
 import './Home.css'
 import {allBlogerPost,getAllImg} from '../services/api';
-import {Link} from 'react-router-dom';
+
 import ReactPaginate from 'react-paginate';
 import parse from "html-react-parser"
 import Footer from './Footer';
 import Header from './Header';
 import Slide from 'react-reveal/Slide';
-
 import ReactPlayer from 'react-player'
 import Imgshome from './Imgshome';
-
-
+import { HashLink } from 'react-router-hash-link';
 export default function Home() {
     const intialState={
         bloger:[],
-       
-        
       }
       const [state,setState] = useState(intialState)
       const [pageNumber,setpageNumber] = useState(0)
@@ -24,51 +20,36 @@ export default function Home() {
         allBlogerPost().then(data=>{
              setState({...state,bloger:data})  
       })
-      
     }, [])
-   
     const blogPage=3
         const pagesVisited = pageNumber * blogPage
         const BlogersElement = state.bloger.slice(pagesVisited,pagesVisited + blogPage).map(blog=>{
             return(
-             
                 <div className='card mb-5 col-12 col-lg-7 card1 mt-5 blogercard' key={blog._id}>
-                  
-                      
                     <div className="colored-shadow" >
                     </div>
-                    
                     <div className="card-body">
                     <h3 className="card-category  text-info">{blog.title}</h3>
-                    
                     {blog.description.length>200 ?
-                <div className=" card-description">
-                  
+                <div className=" card-description">  
                   {parse(blog.description.slice(0,200) ) }
                <p className=' text-center'> 
-                  <Link  to={"/Bloger/"+blog._id}> Read More </Link>
+                  <HashLink   to={"/Bloger/"+blog._id+"#card"}> Read More </HashLink >
                   </p>
                 </div>
                  :<p className="card-description">
-                  
                   {parse(blog.description)}
-                   
                  </p>} 
-
                  <p>{blog.date.split('T')[0] } </p>
-                <p className="link-blog ">
-                  
+                <p className="link-blog "> 
                   <a target='_blank' href={blog.urlBlog} >
                     {blog.urlBlog}
                   </a>
                 </p>
-                    
-                    
                 </div>
-                <Link to={"/Bloger/"+blog._id}>
-                            
-                            <img className="img card-img-top justify-content-md-center "src={blog.imgs[0]} alt="img"/>
-                          </Link>
+                <HashLink  to={"/Bloger/"+blog._id}>
+                  <img className="img card-img-top justify-content-md-center "src={blog.imgs[0]} alt="img"/>
+                </HashLink >
                 </div>
                 
             )
@@ -118,14 +99,7 @@ export default function Home() {
               </Slide >
               <Slide  right> 
               <div className="col-lg-6 col-md-12 ml-auto">
-                {/* <div className="image-container">
-                <img className="social-img" src="./images/buch1.jpg" alt=""/>
-                  <img className="social-img1" src="./images/buch5.jpg" alt=""/>
-                  
-                </div> */}
                 <div >
-
-           
                 <div class="rotating">
                     <div class="flip ">
                         <div class="front trn">

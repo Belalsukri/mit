@@ -13,7 +13,6 @@ export default function AdminVeranstaltungen() {
     confirmModalPayLoad: null
   }
   const [state,setState] = useState(intialState)
- 
   useEffect(()=>{
     allBlogerPost().then(data=>{
       console.log(data);
@@ -28,10 +27,6 @@ export default function AdminVeranstaltungen() {
           setState({...state,bloger:data})
           break;
       }
-      
-         
-      
-
   })
   }, [])
   const closeCnfirmModal = () => {
@@ -44,7 +39,6 @@ export default function AdminVeranstaltungen() {
   const deleteConferm =(blogerId)=>{
        
     deletePost(blogerId).then(dat=>{
-        console.log(dat);
         switch (dat) {
             case 1:
               navigate('/')
@@ -63,12 +57,9 @@ export default function AdminVeranstaltungen() {
                })
                 break;
         }
-        
     })
-
 }
 const deletBtn =(blogerId)=>{
-     
   setState({
       ...state,
       confirmModalShow: true,
@@ -76,7 +67,6 @@ const deletBtn =(blogerId)=>{
       confirmModalElement: <p>I hope you know what you are doing , this bloger gonna be deleted for server</p>
     })
 }
-
   const BlogersElement =state.bloger.map(blog=>{
   return(
     <div className='card mb-2  col-lg-5 mx-5  card1 mt-4' key={blog._id}>   
@@ -131,34 +121,21 @@ const deletBtn =(blogerId)=>{
               <div className='row'> 
               <button type="button" class="col-md-3 btn  btn-outline-info btn-lg ml "><Link to="/AddArticle" className="badge " > Add a new Veranstaltungen</Link></button>
               
-              </div>
-
-              
+              </div>   
             </div>
-            
-            
-              
                   <div className="container">  
                   <div className='row'> 
-                  {BlogersElement}
-                   
-                            
+                  {BlogersElement}        
                     </div>
                     <div className="col-12">
                         <div className="col-11 mt-2">
                          <nav aria-label="...">
-                
                              <ul className="pagination  justify-content-center">
-                                
-                                 
                                <li className="page-item "><a className="page-link fn-link" href="/admin-alla-0000/<%= i%>"> </a></li>
-                             
                              </ul>
-                             
                            </nav>
                            </div>
                         </div>
-                
                      </div> 
                     
                     </div> 

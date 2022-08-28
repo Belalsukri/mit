@@ -17,7 +17,6 @@ export default function AdminErfolg() {
  
   useEffect(()=>{
     allErfolgPost().then(data=>{
-      console.log(data);
       switch (data) {
         case 1:
             navigate('/Erfolg')
@@ -39,9 +38,7 @@ export default function AdminErfolg() {
   }
   //////////
   const deleteConferm =(blogerId)=>{
-       
     deleteErfolg(blogerId).then(dat=>{
-        console.log(dat);
         switch (dat) {
             case 1:
               navigate('/Admin')

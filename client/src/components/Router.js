@@ -17,6 +17,8 @@ import AdminErfolg from './AdminErfolg'
 import EditErfoig from './EditErfoig';
 import Adminimghome from './Adminimghome';
 import AddImg from './AddImg';
+
+
 export default function Router() {
   return (
     <BrowserRouter>

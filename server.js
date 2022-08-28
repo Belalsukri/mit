@@ -25,8 +25,7 @@ app.post('/addBlog', (req, res) => {
         if (req.files[key].mimetype !='application/pdf') {
             imgs.push(req.files[key])   
         }
-    }    
-    console.log( title,dec,url,imgs);
+    }
         dataModule.addProduct(title, dec,url,imgs).then(() => {
             res.json(1)
         }).catch(error => {
@@ -40,7 +39,7 @@ app.post('/addBlog', (req, res) => {
         res.json(2)
     }
 })
-
+///////////////////
 app.post('/addErfolg', (req, res) => {
       if (req.files) {
       const title = req.body.title
@@ -51,8 +50,7 @@ app.post('/addErfolg', (req, res) => {
               imgs.push(req.files[key])
                
           }
-      }    
-      console.log( req.files);
+      } 
           dataModule.addErfolg(title, dec,imgs).then(() => {
               res.json(1)
           }).catch(error => {
@@ -67,18 +65,15 @@ app.post('/addErfolg', (req, res) => {
       }
       
 })
-
+///////////////////
 app.post('/addimg', (req, res) => {
           if (req.files) {
-         
           const imgs =[]
           for(const key in req.files){
               if (req.files[key].mimetype !='application/pdf') {
-                  imgs.push(req.files[key])
-                   
+                  imgs.push(req.files[key]) 
               }
-          }    
-          console.log( imgs);
+          }
               dataModule.addimg(imgs).then(() => {
                   res.json(1)
               }).catch(error => {
@@ -91,7 +86,6 @@ app.post('/addimg', (req, res) => {
           } else {
               res.json(2)
           }
-          
 })
           
 app.get('/getAllImg',(req,res)=>{
@@ -118,7 +112,7 @@ app.get('/getallbloger',(req,res)=>{
           res.json(error)
       })
 })
-
+////////////////////////////
 app.get('/getallErfolg',(req,res)=>{
       dataModule.getAllErfolg().then(bloger => {
           res.json(bloger)
@@ -126,7 +120,7 @@ app.get('/getallErfolg',(req,res)=>{
           res.json(error)
       })
 })
-  
+  ///////////////////////////////
 app.post('/deletebloger', (req, res) => {
       const blogerId = req.body.blogerId
       dataModule.deleteProduct(blogerId).then(() => {
@@ -135,19 +129,9 @@ app.post('/deletebloger', (req, res) => {
           res.json(2)
       })
 })
-  
-// app.post('/postBlogerId', (req, res) => {
-//       const blogerId = req.body.id
-//       console.log("id..",blogerId);
-//       dataModule.postProductId(blogerId).then(() => {
-//           res.json(1)
-//       }).catch(error => {
-//           res.json(2)
-//       })
-// });
+  ///////////////////////////
 app.put('/getbloger', (req, res) => {
     const blogerId = req.body.id
-    console.log("id..",blogerId);
     dataModule.getProduct(blogerId).then(data => {
         res.json(data)
     }).catch(error => {
@@ -155,21 +139,17 @@ app.put('/getbloger', (req, res) => {
     })
 });
 ///////////////
-  
 app.post('/getErfolg', (req, res) => {
       const blogerId = req.body.id
-      console.log(blogerId);
       dataModule.getErfolg(blogerId).then(data => {
           res.json(data)
       }).catch(error => {
           res.json(2)
       })
 });
+/////////////////////////
 app.post('/editbloger', (req, res) => {
- 
   const {newblogTitle, newDescription,newblogurl,oldImgsUrls,newblogImg,blogid} = req.body
-  console.log(newblogTitle, newDescription,newblogurl,oldImgsUrls,newblogImg,blogid )
-  //console.log(req.files)
   let newImgs = []
   if (req.files){
       for (const key in req.files) {
@@ -178,24 +158,19 @@ app.post('/editbloger', (req, res) => {
           }
       }
   }
-
   let oldImgsUrlsArr =  JSON.parse(oldImgsUrls)
   oldImgsUrlsArr = oldImgsUrlsArr.map(element => {
       return element.substr(element.indexOf('/uplodeFiles/'))
   })
-  console.log('old img ' +oldImgsUrlsArr);
   dataModule.updateProduct(newblogTitle, newDescription,newblogurl,oldImgsUrlsArr,newImgs,blogid ).then((blog) => {
-res.json(blog)
+res.json(1)
   }).catch(error => {
-res.json(2)
+res.json(error)
   })
 })
 //////////////////////////////////////////////
 app.post('/editErfolg', (req, res) => {
- 
   const {newblogTitle, newDescription,oldImgsUrls,newblogImg,blogid} = req.body
-  console.log(newblogTitle, newDescription,oldImgsUrls,newblogImg,blogid )
-  //console.log(req.files)
   let newImgs = []
   if (req.files){
       for (const key in req.files) {
@@ -204,18 +179,17 @@ app.post('/editErfolg', (req, res) => {
           }
       }
   }
-
   let oldImgsUrlsArr =  JSON.parse(oldImgsUrls)
   oldImgsUrlsArr = oldImgsUrlsArr.map(element => {
       return element.substr(element.indexOf('/uplodeFiles/'))
   })
-  console.log('old img ' +oldImgsUrlsArr);
   dataModule.updateErfolg(newblogTitle, newDescription,oldImgsUrlsArr,newImgs,blogid ).then((blog) => {
-res.json(blog)
+res.json(1)
   }).catch(error => {
 res.json(2)
   })
 })
+/////////////////
 app.post('/deleteerfolg', (req, res) => {
   const blogerId = req.body.blogerId
   dataModule.deleteerfolg(blogerId).then(() => {

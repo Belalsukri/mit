@@ -9,8 +9,6 @@ export default function AddArticle() {
     let navigate = useNavigate();
     const onSubmits=(data)=>{
         const productImg=imagesFileInpRef.current.files
-        // const dec=description.current.state.value
-        console.log(data.title,data.dec , data.url,productImg);
         addBlog(data.title,data.dec , data.url,productImg).then(datit=>{
           console.log('...data..',datit);
           switch (data) {

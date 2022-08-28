@@ -8,7 +8,6 @@ export default function AddArticle() {
     let navigate = useNavigate();
     const onSubmits=(data)=>{
         const productImg=imagesFileInpRef.current.files
-        console.log(data.title,data.dec ,productImg);
         AddErfolg(data.title,data.dec ,productImg).then(datit=>{
           console.log('...data..',datit);
           switch (data) {

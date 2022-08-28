@@ -16,20 +16,6 @@ export default function Editbloger1() {
   const [state, setState] = useState(initialState)
  
   useEffect(() => {
-  //   postBlogerId(params.id).then(id=>{
-  //     switch (id) {
-  //       case 1:
-  //         console.log(1); 
-  //       break;
-  //     default:
-        
-  //       break;
-  //   }
-  // }).catch(error => {
-  //   alert(error)
-  // })
-
-    
     getBlogPost(params.id).then(data => {
       console.log(data);
     setState({
@@ -86,7 +72,7 @@ editBlogrePost(state.bloger.title, state.bloger.description, state.bloger.urlBlo
   console.log(dat);
   switch (dat) {
       case 1:
-        navigate('/')   
+        navigate('/admin')   
       break;
     default:
       imagesFileInpRef.current.value=''
@@ -98,6 +84,7 @@ editBlogrePost(state.bloger.title, state.bloger.description, state.bloger.urlBlo
   }
 }).catch(error => {
   alert(error)
+  navigate('/admin')   
 })
 }
 

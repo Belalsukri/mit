@@ -10,7 +10,6 @@ export default function AddImg() {
         const productImg=imagesFileInpRef.current.files
       
         AddImgs(productImg).then(datit=>{
-          console.log('...data..',datit);
           switch (data) {
             case 1:
               navigate('/')
