@@ -240,8 +240,8 @@ function updateProduct(newblogTitle, newDescription,newblogurl,oldImgsUrlsArr,ne
         })
         deletedImgs.forEach(file=>{
             console.log(file);
-            if (fs.existsSync('./public'+file)) {
-                fs.unlinkSync('./public'+file)
+            if (fs.existsSync('./build'+file)) {
+                fs.unlinkSync('./build'+file)
             }
         })
 
