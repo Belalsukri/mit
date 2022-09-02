@@ -234,7 +234,7 @@ function updateProduct(newblogTitle, newDescription,newblogurl,oldImgsUrlsArr,ne
         newImgs.forEach((img, idx) =>{
             const imgExt =img.name.substr(img.name.lastIndexOf('.'))
             console.log(imgExt);
-            const newImgName=newblogTitle.trim().replace(/ /g, '_') + '_'+blogId+'_'+ idx +imgExt
+            const newImgName=newblogTitle.trim().replace(/ /g, '_') + '_'+idx + (result.__v + 1)+imgExt
             newImgsUrlsArr.push('/uplodeFiles/'+newImgName)
             img.mv('./client/build/uplodeFiles/' + newImgName)
         })
