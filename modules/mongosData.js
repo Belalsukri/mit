@@ -2,8 +2,8 @@ const mongoose =require('mongoose')
 const fs = require('fs')
 const path = require('path');
 const dotenv = require('dotenv');
-dotenv.config();
-const connectionString=process.env.DB_URI
+// dotenv.config();
+const connectionString="mongodb+srv://belal:0966405529@cluster0.l6boz.mongodb.net/?retryWrites=true&w=majority"
 function connect() {
     
   return new Promise((resolve, reject) => {
