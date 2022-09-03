@@ -59,7 +59,7 @@ function addProduct(title, dec,url,imgs) {
                         // get file extension
                           let ext = img.name.substr(img.name.lastIndexOf('.'))
                           // set the new image name
-                          let newName = title.trim().replace(/ /g, '_') + '_' + idx + ext
+                          let newName = title.trim().replace(/ /g, '_') + '_' + ext
                           img.mv('./client/build/uplodeFiles/' + newName)
                           imgsArr.push('/uplodeFiles/' + newName)
                     });
@@ -240,8 +240,8 @@ function updateProduct(newblogTitle, newDescription,newblogurl,oldImgsUrlsArr,ne
         })
         deletedImgs.forEach(file=>{
             console.log(file);
-            if (fs.existsSync('./public'+file)) {
-                fs.unlinkSync('./public'+file)
+            if (fs.existsSync('./build'+file)) {
+                fs.unlinkSync('./build'+file)
             }
         })
 
