@@ -59,7 +59,7 @@ function addProduct(title, dec,url,imgs) {
                         // get file extension
                           let ext = img.name.substr(img.name.lastIndexOf('.'))
                           // set the new image name
-                          let newName = title.trim().replace(/ /g, '_') + '_' + ext
+                          let newName = title.trim().replace(/ /g, '_') + '_' + idx + ext
                           img.mv('./client/build/uplodeFiles/' + newName)
                           imgsArr.push('/uplodeFiles/' + newName)
                     });
@@ -234,7 +234,7 @@ function updateProduct(newblogTitle, newDescription,newblogurl,oldImgsUrlsArr,ne
         newImgs.forEach((img, idx) =>{
             const imgExt =img.name.substr(img.name.lastIndexOf('.'))
             console.log(imgExt);
-            const newImgName=newblogTitle.trim().replace(/ /g, '_') + '_'+idx + (result.__v + 1)+imgExt
+            const newImgName=newblogTitle.trim().replace(/ /g, '_') + '_'+idx +'_'+ imgExt
             newImgsUrlsArr.push('/uplodeFiles/'+newImgName)
             img.mv('./client/build/uplodeFiles/' + newImgName)
         })
