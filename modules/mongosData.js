@@ -57,11 +57,11 @@ function addProduct(title, dec,url,imgs) {
                     const imgsArr = []
                     imgs.forEach((img, idx) => {
                         // get file extension
-                          let ext = img.name.substr(img.name.lastIndexOf('.'))
-                          // set the new image name
-                          let newName = title.trim().replace(/ /g, '_') +'_'+idx +'_' + ext
-                          img.mv('./client/build/uplodeFiles/' + newName)
-                          imgsArr.push('/uplodeFiles/' + newName)
+                          let ext = img.name
+                         
+                         
+                          img.mv('./client/build/uplodeFiles/' + ext)
+                          imgsArr.push('/uplodeFiles/' + ext)
                     });
                       const newProduct =new Product({
                         title: title,
