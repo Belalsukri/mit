@@ -60,7 +60,7 @@ function addProduct(title, dec,url,imgs) {
                           let ext = img.name.substr(img.name.lastIndexOf('.'))
                           // set the new image name
                           let newName = title.trim().replace(/ /g, '_') +'_'+idx +'_' + ext
-                          img.mv('./client/build/uplodeFiles/' + newName)
+                          img.mv('/uplodeFiles/' + newName)
                           imgsArr.push('/uplodeFiles/' + newName)
                     });
                       const newProduct =new Product({
