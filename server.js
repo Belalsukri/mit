@@ -14,7 +14,6 @@ app.use(fileupload({
     // tempFileDir : '/ tmp /' ,
     limits: { fileSize: 50 * 1024 * 1024 }
 }))
-
 app.post('/addBlog', (req, res) => {
     if (req.files) {
     const title = req.body.title
