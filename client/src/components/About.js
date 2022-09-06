@@ -6,38 +6,24 @@ export default function About() {
   return (
     <div className='header'>
      
-     <div  className='carousel-inner chadu'> 
-     <Nave></Nave>
-    <div className="intro-header  imgheader">
-      <div className="bg-overlay mt-5">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-12">
-                    <div className="intro-message text-light">
-                        <h2>Willkommen</h2>
-                      <h5> 'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</h5>
-                        
-                     
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-      </div>
-    </div>
-    </div>
+     
    
 
-<div className="  content-section-a mb-5 mt-5">
+<div className="  content-section-a  ">
   <div className="container-fluid">
+  
     <div className="row">
-      <div className="col ml-auto mr-auto text-center">
+    <div  className=' intro-header mb-5'> 
+     <Nave ></Nave>
+    
+    
+      <div className="col ml-auto mr-auto text-center mt-4">
         <h2 className="title text-white ">The Executive Team 5</h2>
-        <h5 className="description text-white mt-2 ">This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful information.</h5>
+        <h5 className="description text-white  ">This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful information.</h5>
       </div>
     </div>
-    <div className="row p-3 bg-overlay2 mt-3">
+    </div>
+    <div className="row p-3 bg-overlay2 ">
       <div className="col-md-6 mt-3">
         <div className='row'> 
         <div className="card card-profile card-plain">

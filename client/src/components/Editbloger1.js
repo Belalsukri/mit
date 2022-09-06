@@ -97,7 +97,7 @@ editBlogrePost(state.bloger.title, state.bloger.description, state.bloger.urlBlo
       ...state,
       bloger: newimgs
     })
-    
+    console.log(newimgs);
   }
   //////////
 console.log(state.bloger);

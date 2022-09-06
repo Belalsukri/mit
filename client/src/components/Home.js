@@ -40,7 +40,7 @@ export default function Home() {
                  :<p className="card-description">
                   {parse(blog.description)}
                  </p>} 
-                 <p>{blog.date.split('T')[0] } </p>
+                
                 <p className="link-blog "> 
                   <a target='_blank' href={blog.urlBlog} >
                     {blog.urlBlog}
@@ -67,10 +67,7 @@ export default function Home() {
       <Header/>
     <div className='home'>
       <div className='container bck '>
-        <Slide bottom className='row  justify-content-md-center  p-2'> 
-            <h2 className='row  justify-content-md-center'> Das Buch</h2>
-            <h4 className='row  justify-content-md-center'> papa,warum wir sind Hier.</h4>
-        </Slide>
+        
 
         <div class="section-components">
           <div className="container">
@@ -80,6 +77,7 @@ export default function Home() {
                 <h3 className="title">Info über das Buch:
                 </h3><h6 className="description"></h6>
                 <p className="description">
+                
                 In seiner Biografie schildert Homayoon Pardis, dass es möglich ist, eine neue Heimat in
                 Deutschland zu finden, ohne die eigene Herkunft zu vergessen. Denn Ankommen bedeutet
                 viel mehr als das Finden einer Wohnung, eines Jobs und einer Kita für die Kinder. Es geht um
@@ -127,8 +125,8 @@ export default function Home() {
           </div>
         </div>
         <div className='row  justify-content-md-center p-2'> 
-            <h1 className='row mt-5 justify-content-md-center'> Veranstaltungen</h1>
-            <p className='row  justify-content-md-center'> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h1 className='row mt-5 justify-content-md-center'> Lesungen/Veranstaltungen</h1>
+            
         </div>
          
         <div className='col row justify-content-md-center card1 '>

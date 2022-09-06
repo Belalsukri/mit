@@ -37,15 +37,16 @@ function connect() {
         type:String,
         required:true
     },
-   date:{
-       type:Date,
-       required:true
-    },
+   
     imgs:{
         type:[String],
         required:true,
         min:1
-    }
+    },
+    date:{
+        type:Date,
+        required:true
+     },
    
 })
 const Product =mongoose.model('addplog',productSchema)
@@ -68,9 +69,9 @@ function addProduct(title, dec,url,imgs) {
                         urlBlog:url,
                         description: dec,
                         imgs: imgsArr,
+                        date:Date()
                         
-                        
-                        date:Date() 
+                      
                         
                     })
                     newProduct.save().then(() => {

@@ -28,7 +28,7 @@ export default function Formfooter() {
     <form className=' col-12' id="contact-form" method="post"
     onSubmit={handleSubmit(onSubmit)}>
     <div className="card-header formHeder  text-center bg-primary ">
-      <h4 className="card-title text-white">Contact Us</h4>
+      <h4 className="card-title text-white">Kontakt</h4>
     </div>
     <div className="card-body ">
       <div className='row'> 

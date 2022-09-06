@@ -19,7 +19,7 @@ export default function Nave() {
               <Link className="nav-link active text-light font " aria-current="page" to="/">Home</Link>
             </li>
             <li className="nav-item   linkHover">
-              <Link className="nav-link text-light  font" to="/Veranstaltungen">Veranstaltungen</Link>
+              <Link className="nav-link text-light  font" to="/Veranstaltungen">Lesungen</Link>
             </li>
             <li className="nav-item linkHover ">
               <Link className="nav-link text-light font" to="/Erfolg">Erfolg</Link>

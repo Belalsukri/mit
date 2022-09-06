@@ -1,8 +1,8 @@
 .intro-header {
     padding-top: 90px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    
-    background: url('../../public/images/about5.jpg') no-repeat   ;
+   
+    z-index: 100;
+   
     background-size: cover;
     
 }

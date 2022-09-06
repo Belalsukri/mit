@@ -37,8 +37,8 @@ export default function Contact() {
       <div class="   contact" id="contact_me">
           <div class="row rowContact ">
               <div class="col-md-8 ml-auto mr-auto mt-4"> 
-                <h2 class=" ml-auto mr-auto text-center fw-bold  fs-1 text-primary mb-2 mt-5">Contact Us</h2>
-                <h4 class="text-center descrip ">If you have any inquiries or questions, do not hesitate to contact us, we will respond as soon as possible.</h4>
+                <h2 class=" ml-auto mr-auto text-center fw-bold  fs-1 text-primary mb-2 mt-5">Kontakt</h2>
+                <h4 class="text-center descrip ">Wenn Sie Fragen oder Anregungen haben, zögern Sie biite nicht, uns zu kontaktieren, wir werden so schnell wie möglich antworten.</h4>
               </div>
             
    
@@ -116,16 +116,16 @@ export default function Contact() {
               <div class="col-md-3 col-12 icone text-center   mb-5">
                 <ul class="list-unstyled mb-0 mt-5">
                     <li class='hof'><i class="fas fa-map-marker-alt fa-2x  list-inline  "> </i>
-                        <p class='descrip hof'>Friedrich-Frank-Bogen 44</p>
-                        <p class=' descrip hof'>hamburg  21033</p>
+                        <p class='descrip hof'></p>
+                        <p class=' descrip hof'>Hamburg  </p>
                     </li>
         
                     <li  class='hof'><i class="fas fa-phone mt-4 fa-2x  list-inline  "></i>
-                        <p class='descrip hof'> 01 629 664 219</p>
+                        <p class='descrip hof'> 017634418703</p>
                     </li>
         
                     <li  class='hof'><i class="fas fa-envelope mt-4 fa-2x  list-inline "></i>
-                        <p class='descrip hof'>belalsukari@gmail.com</p>
+                        <p class='descrip hof'>papawswh@gmail.com</p>
                     </li>
                 </ul>
               </div>

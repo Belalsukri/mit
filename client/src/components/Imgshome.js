@@ -41,12 +41,8 @@ const images0= state.imgHom.map(img=>{
       <div class="row">
         <div class="col-8 mx-auto text-center mb-5">
           <span class="badge rounded-pill badge-primary mb-2">Co-working</span>
-          <h2>Explore our places in London </h2>
-          <p>
-            If you cant decide, the answer is no. If two equally difficult paths,
-            choose the one more painful in the short term (pain avoidance
-            is creating an illusion of equality).
-          </p>
+          <h2> </h2>
+          
         </div>
       </div>
       <div class="row min-vh-25">
