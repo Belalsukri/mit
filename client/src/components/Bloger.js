@@ -40,9 +40,12 @@ export default function Bloger() {
             <p className="card-description"> {state.bloger.description} </p>
             
             <p className="link-blog ">
+            
+            <a target='_blank' href={state.bloger.urlBlog} >
             {state.bloger.urlBlog}
+                  </a>
             </p>
-            <p>{state.dates} </p>
+            
         </div>
             <img className="img card-img-top justify-content-md-center "src={state.bloger.imgs} alt="img"/>             
     </div>

@@ -265,8 +265,8 @@ height: 100px;
 } */
 
 .imgerfolg{
-  height: 400px;
-  width: 350px;
+  height: 500px;
+  width: 450px;
   left: 30px;
   z-index: 10 !important;
   position: relative;
@@ -276,8 +276,7 @@ height: 100px;
 }
 
 .carderfolg{
-  height: 400px;
-  width: 400px;
+  
   background-color: #0092ca;
   right: 30px;
   position: relative;
