@@ -23,9 +23,12 @@ export default function GetBloger() {
                  <p className="card-description">
                   {parse(blog.description)} 
                  </p>
-                 <p>{blog.date.split('T')[0] } </p>
+                 
                 <p className="link-blog ">
-                    {blog.urlBlog}
+                <a target='_blank' href={blog.urlBlog} >
+                {blog.urlBlog}
+                  </a>
+                    
                 </p> 
                 </div>           
                 <img className="img card-img-top justify-content-md-center"src={blog.imgs[0]} alt="img"/>
