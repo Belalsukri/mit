@@ -10,7 +10,7 @@ const app =express()
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(fileupload({
-    useTempFiles : true , 
+    useTempFiles : false , 
     // tempFileDir : '/ tmp /' ,
     limits: { fileSize: 50 * 1024 * 1024 }
 }))
