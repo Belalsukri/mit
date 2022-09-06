@@ -16,7 +16,6 @@ export default function About() {
     <div  className=' intro-header mb-5'> 
      <Nave ></Nave>
     
-    
       <div className="col ml-auto mr-auto text-center mt-4">
         <h2 className="title text-white ">The Executive Team 5</h2>
         <h5 className="description text-white  ">This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful information.</h5>
