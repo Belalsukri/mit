@@ -29,16 +29,12 @@ export default function Footer() {
             </div>
             <div className="description">
             <h5 className="info-title text-white-50 ">Rose Marie Hoffmann-Riem</h5>
-            
             <p className='text-white-50 '>
              0172/9710325
-           
             </p>
             <h5 className="info-title text-white-50 "> Homayoon Pardis</h5>
-            
             <p className='text-white-50 '> 
              0176/34418703
-            
             </p>
             </div>
           </div>
