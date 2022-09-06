@@ -9,7 +9,7 @@ export default function Bloger() {
     const params = useParams()
     const intialState={
         bloger:[], 
-        dates:null,
+        
       }
     const [state,setState] = useState(intialState) 
     useEffect(()=>{
@@ -17,7 +17,7 @@ export default function Bloger() {
           setState({
             ...state,
             bloger: data,
-            dates: data.date.split('T')[0] ,
+           
           })
         })
     }, [])

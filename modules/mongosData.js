@@ -59,8 +59,6 @@ function addProduct(title, dec,url,imgs) {
                     imgs.forEach((img, idx) => {
                         // get file extension
                           let ext = img.name
-                         
-                         
                           img.mv('./client/build/uplodeFiles/' + ext)
                           imgsArr.push('/uplodeFiles/' + ext)
                     });
@@ -70,22 +68,14 @@ function addProduct(title, dec,url,imgs) {
                         description: dec,
                         imgs: imgsArr,
                         date:Date()
-                        
-                      
-                        
                     })
                     newProduct.save().then(() => {
-                        
-
                               resolve()
-
                       }).catch(error => {
                         console.log(error.code);
-
                       })
                 
             }).catch(error => {
-
               reject(error)
             })
 
@@ -362,7 +352,6 @@ function getAllErfolg() {
   
   }
   //.............................
-
   function getErfolg(id) {
     return new Promise((resolve, reject) => {
         connect().then(() => {
