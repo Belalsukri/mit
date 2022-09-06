@@ -126,7 +126,6 @@ export default function Home() {
         </div>
         <div className='row  justify-content-md-center p-2'> 
             <h1 className='row mt-5 justify-content-md-center'> Lesungen/Veranstaltungen</h1>
-            
         </div>
          
         <div className='col row justify-content-md-center card1 '>
