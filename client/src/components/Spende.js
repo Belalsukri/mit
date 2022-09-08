@@ -14,7 +14,7 @@ export default function Spende() {
                 <div className="col-lg-12">
                     <div className="intro-message mt-2 text-light">
                         <h3>Interkulturelle Biografie: “PAPA, WARUM SIND WIR HIER?”</h3>
-                      <h5 className='text-light textspende'>
+                      <h6 className='text-light textspende'>
                       Der Erfolg des Buches „Papa, warum sind wir hier“ von Homayoon Pardis und Rose
                       Marie Hoffmann-Riem  hat einen kühnen Traum erfüllt. Eingehende Spenden,
                       Verkäufe während der Lesungen in allen Stadtteilen Hamburgs und online-
@@ -30,7 +30,7 @@ export default function Spende() {
                       werden wir alles daransetzen, auch noch einen Studiengang von
                       Krankenschwestern unterstützen zu können. Wer mithelfen will durch Spenden
                       oder Buchkauf, melde sich bitte bei:<h3>  papawswh@gmail.com</h3>
-                      </h5>
+                      </h6>
                         
                      
                     </div>

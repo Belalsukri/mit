@@ -8,7 +8,6 @@ export default function GetBloger() {
         
       }
       const [state,setState] = useState(intialState)
-      const [pageNumber,setpageNumber] = useState(0)
       useEffect(()=>{
         allBlogerPost().then(data=>{
              setState({...state,bloger:data})  

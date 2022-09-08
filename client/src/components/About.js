@@ -27,12 +27,12 @@ export default function About() {
         <div className='row'> 
         <div className="card card-profile card-plain">
           <div className="row">
-            <div className="col-md-5">
+            <div className="col-lg-5">
             <div className=" card-header-image ">
             <img className="imgAbout mb-5" src="/images/frau3-f.jpg"/>
             </div>
             </div>
-            <div className="col-md-7">
+            <div className="col-lg-7">
               <div className="card-body crd">
               <h4 className="card-title text-white">Rose Marie Hoffmann-Riem:</h4>
               <p className="card-description text-white">
@@ -57,12 +57,12 @@ export default function About() {
         <div className='row'> 
         <div className="card card-profile card-plain">
           <div className="row">
-            <div className="col-md-5">
+            <div className="col-lg-5">
             <div className=" card-header-image ">
             <img className="imgAbout mb-5" src="/images/mann-f.jpg"/>
             </div>
             </div>
-            <div className="col-md-7">
+            <div className="col-lg-7">
               <div className="card-body ">
               <h4 className="card-title text-white">Homayoon Pardis:</h4>
               <p className="card-description text-white">

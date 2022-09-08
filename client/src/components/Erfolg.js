@@ -23,9 +23,9 @@ const BlogersElement = state.bloger.map(blog=>{
       <div className="col-md-6 ">
           <img src={blog.imgs[0]} class=" float-end  imgerfolg" alt="..."/>
       </div>
-      <div className="col-md-6 mt-5">
+      <div className="col-lg-6 mt-5">
       <div className="card  carderfolg">
-        <div className="card-body p-5">
+        <div className="card-body p-md-5">
           <h5 className="card-title text-light">{blog.title}</h5>
           <p className="card-text text-light"> {blog.description}</p>
           <p className="card-text text-light">{blog.date.split('T')[0] } </p>
@@ -47,7 +47,7 @@ console.log(state.bloger);
   return (
   <div className='page-header header-filter header-small header'>
    
-      <div  className='carousel-inner chadu'>  
+      <div  className=' chadu'>  
         <Nave></Nave>
         <img src="./images/erfolg.png" className="d-block w-100 imgheader " alt="..."/>
       </div>

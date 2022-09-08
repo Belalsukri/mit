@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react'
 
 import './Home.css'
 import {getAllImg} from '../services/api';
-import Roll from 'react-reveal/Roll';
+
 export default function Imgshome() {
   const intialState={
     imgHom:[],
@@ -22,10 +22,10 @@ const images0= state.imgHom.map(img=>{
  
     return(
     
-      <div class="col-sm-4 mb-sm-0 mb-3 mt-3">
-        <Roll left class="">
+      <div class="col-md-6 col-lg-4 mb-sm-0 mb-3 mt-3">
+        
         <img className='w-100 border-radius-lg bg-cover backimg1' src={img.imgs} />
-        </Roll>
+        
       </div>
   
    )

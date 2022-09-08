@@ -401,8 +401,20 @@ height: 100px;
 .imgheader{
 height: 50vh;
 }
-
-
+.carderfolg{
+  right: 0%;
+  padding: 0 !important;
+  margin-top: 10px !important;
+}
+.imgAbout{
+  height: 450px;
+}
+.intro-header{
+  padding-left: 0;
+}
+.carderfolg {
+  margin-top: 10px !important;
+}
    }
 
    @media(max-width:930px){
@@ -411,5 +423,12 @@ height: 50vh;
       opacity: 1;
       visibility: visible;
       background-color: #008dc3;
+    }
+    .carderfolg {
+      margin-top: -70px ;
+    }
+    .bg-overlay{
+      margin-left: 0;
+      margin-right: 0;
     }
    }
