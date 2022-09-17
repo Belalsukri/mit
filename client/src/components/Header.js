@@ -17,9 +17,7 @@ export default function Header() {
     <div className="carousel-item active " data-bs-interval="3000">
       <div  className="d-block w-100 imghederhome carousel-item-1" alt="..."></div>
     </div>
-    <div className="carousel-item " data-bs-interval="2000">
-    <div  className="d-block w-100 imghederhome carousel-item-2" alt="..."></div>
-    </div>
+    
     <div className="carousel-item ">
     <div  className="d-block w-100 imghederhome carousel-item-3" alt="..."></div>
     </div>

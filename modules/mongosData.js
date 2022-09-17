@@ -9,16 +9,20 @@ function connect() {
   return new Promise((resolve, reject) => {
       if (mongoose.connection.readyState === 1) {
           resolve()
+         
       } else {
           mongoose.connect(connectionString, {
-             
+            
+                
           }).then(() => {
               resolve()
               console.log('hello mongoose');
           }).catch(error => {
               reject(error)
+              console.log(error);
           })
       }
+      
   })
 }
   ////////////////////////////////////////
