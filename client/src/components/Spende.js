@@ -30,6 +30,10 @@ export default function Spende() {
                       werden wir alles daransetzen, auch noch einen Studiengang von
                       Krankenschwestern unterstützen zu können. Wer mithelfen will durch Spenden
                       oder Buchkauf, melde sich bitte bei:<h3>  papawswh@gmail.com</h3>
+                      <br/>
+                      <h5>  Rose-Marie Hoffmann-Riem</h5>
+                      <h5>  IBAN: DE68 2005 0550 1229 43 8112 </h5>
+                      <h5>  Vermerk: Projekt Herat</h5>
                       </h6>
                         
                      

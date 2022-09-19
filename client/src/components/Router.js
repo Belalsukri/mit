@@ -4,7 +4,6 @@ import AddArticle from './AddArticle';
 import Admin from './Admin';
 import Home from './Home';
 import Erfolg from './Erfolg';
-import Buch from './Buch'
 import About from './About';
 import Veranstaltungen from './Veranstaltungen';
 import Contact from './Contact';
@@ -36,7 +35,6 @@ export default function Router() {
         <Route path="/Adminimghome"exact element={<Adminimghome />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/Buch" element={<Buch />} />
         <Route path="/Erfolg" element={<Erfolg />} />
         <Route path="/Spende" element={<Spende />} />
         <Route path="/Bloger/:id" element={<Bloger />} />

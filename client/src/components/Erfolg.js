@@ -49,7 +49,7 @@ console.log(state.bloger);
    
       <div  className=' chadu'>  
         <Nave></Nave>
-        <img src="./images/erfolg.png" className="d-block w-100 imgheader " alt="..."/>
+        <img src="./images/papa3-3-m.jpg" className="d-block w-100 imgheader " alt="..."/>
       </div>
       
       <div className="container ">
