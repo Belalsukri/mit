@@ -8,12 +8,11 @@ import About from './About';
 import Veranstaltungen from './Veranstaltungen';
 import Contact from './Contact';
 import Spende from './Spende';
-import Editbloger1 from './Editbloger1';
 import Bloger from './Bloger';
 import AddErfolg from './AddErfolg';
 import AdminVeranstaltungen from './AdminVeranstaltungen';
 import AdminErfolg from './AdminErfolg'
-import EditErfoig from './EditErfoig';
+import Editbloger1 from './Editbloger1';
 import Adminimghome from './Adminimghome';
 import AddImg from './AddImg';
 
@@ -38,7 +37,6 @@ export default function Router() {
         <Route path="/Erfolg" element={<Erfolg />} />
         <Route path="/Spende" element={<Spende />} />
         <Route path="/Bloger/:id" element={<Bloger />} />
-        <Route path="/EditErfoig/:id" element={<EditErfoig />} />
         <Route path="/Editbloger1/:id" element={<Editbloger1 />} />
         <Route path="/AddImg" element={<AddImg />} />
         
