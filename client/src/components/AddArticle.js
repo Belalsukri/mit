@@ -13,13 +13,13 @@ export default function AddArticle() {
           console.log('...data..',datit);
           switch (data) {
             case 1:
-              navigate('/')
+              navigate('/Admin')
               break;
             case 2:
                 console.log('server error')
                 break;
             default:
-              navigate('/')
+              navigate('/Admin')
               break;
           }
         })

@@ -97,7 +97,6 @@ const deletBtn =(blogerId)=>{
         {blog.urlBlog}
       </a>
     </p>
-    <button type="button" className="btn btn-success col-5"><Link className="text-white" to={"/EditErfoig/"+blog._id}>Edit</Link></button>
     <button type="button" className="btn btn-danger col-5"><Link className="showDeleteModalBtn text-white" onClick={()=>{deletBtn(blog._id)}} to="#">Delete</Link></button>
         
     </div>

@@ -18,7 +18,7 @@ export default function AddArticle() {
                 console.log('server error')
                 break;
             default:
-              navigate('/')
+              navigate('/Admin')
               break;
           }
         })
