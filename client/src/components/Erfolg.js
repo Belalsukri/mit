@@ -54,7 +54,7 @@ console.log(state.bloger);
       
       <div className="container ">
           <div> 
-            <h2 className='text-center mt-5'>Always innovating </h2>
+            <h2 className='text-center mt-5'>Erfolg des Buches </h2>
           </div>
           {BlogersElement}
       </div>
