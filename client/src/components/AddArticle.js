@@ -2,6 +2,7 @@ import React, {useRef} from 'react'
 import {Link,useNavigate } from 'react-router-dom'
 import {useForm} from 'react-hook-form'
 import {addBlog} from '../services/api'
+import { exit } from 'process'
 
 export default function AddArticle() {
     const {register,handleSubmit}= useForm()

@@ -9,7 +9,7 @@ export default function Veranstaltungen() {
       <div class="">  
       <div  className='carousel-inner chadu'>  
           <Nave></Nave>
-          <img src="./images/back-lesung.png" className="d-block w-100 imgheader" alt="..."/>
+          <img src="./images/Background-Lesung12.jpg" className="d-block w-100 imgheader" alt="..."/>
       </div>
       <div className='container'>  
           <h1 className='row justify-content-center mt-2'> Veranstaltungen</h1>

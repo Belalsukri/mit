@@ -64,6 +64,7 @@ function addProduct(title, dec,url,imgs) {
                         // get file extension
                           let ext = img.name
                           img.mv('./client/build/uplodeFiles/' + ext)
+                          img.mv('./client/public/uplodeFiles/' + ext)
                           imgsArr.push('/uplodeFiles/' + ext)
                     });
                       const newProduct =new Product({
@@ -125,12 +126,13 @@ function deleteProduct(blogerId) {
             bloger.imgs.forEach(img => {
                 // console.log(img);
                 let filePath = uploadDir + img;
-                 console.log(filePath);
+                 console.log(filePath );
                 //check the img file is exist then delete it
-                if (fs.existsSync(filePath)){
-                    fs.unlink(filePath,(err)=>{
+                if (fs.existsSync(filePath )){
+                    fs.unlink(filePath ,(err)=>{
                         console.log(err);
                     })
+                   
                 }
                 else{
                     console.log('not exist');
@@ -232,11 +234,13 @@ function updateProduct(newblogTitle, newDescription,newblogurl,oldImgsUrlsArr,ne
             const newImgName=newblogTitle.trim().replace(/ /g, '_') + '_'+idx +'_'+ imgExt
             newImgsUrlsArr.push('/uplodeFiles/'+newImgName)
             img.mv('./client/build/uplodeFiles/' + newImgName)
+            img.mv('./client/public/uplodeFiles/' + newImgName)
         })
         deletedImgs.forEach(file=>{
             console.log(file);
             if (fs.existsSync('./client/build'+file)) {
                 fs.unlinkSync('./client/build'+file)
+                fs.unlinkSync('./client/public'+file)
             }
         })
 
@@ -300,6 +304,7 @@ function addErfolg(title, dec,imgs) {
                           // set the new image name
                           let newName = title.trim().replace(/ /g, '_') + '_' + idx + ext
                           img.mv('./client/build/uplodeFiles/' + newName)
+                          img.mv('./client/public/uplodeFiles/' + newName)
                           imgsArr.push('/uplodeFiles/' + newName)
                     });
                       const newProduct =new Erfolg({
@@ -398,6 +403,7 @@ function updateErfolg(newblogTitle, newDescription,oldImgsUrlsArr,newImgs,blogId
             const newImgName=newblogTitle.trim().replace(/ /g, '_') + '_'+blogId+'_'+ idx +imgExt
             newImgsUrlsArr.push('/uplodeFiles/'+newImgName)
             img.mv('./client/build/uplodeFiles/' + newImgName)
+            img.mv('./client/public/uplodeFilesimg/' + newImgName)
         })
         deletedImgs.forEach(file=>{
             console.log(file);
@@ -432,12 +438,14 @@ function deleteerfolg(blogerId) {
             bloger.imgs.forEach(img => {
                 // console.log(img);
                 let filePath = uploadDir + img;
+                
                 // console.log(filePath);
                 //check the img file is exist then delete it
                 if (fs.existsSync(filePath)){
                     fs.unlink(filePath,(err)=>{
                         console.log(err);
                     })
+                    
                 }
                 else{
                     console.log('not exist');
@@ -483,6 +491,7 @@ function addimg(imgs) {
                           // set the new image name
                           
                           img.mv('./client/build/uplodeFilesimg/' + ext)
+                          img.mv('./client/public/uplodeFilesimg/' + ext)
                           imgsArr.push('/uplodeFilesimg/' + ext)
                     });
                       const newProduct =new imghome({
