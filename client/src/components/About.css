@@ -6,6 +6,9 @@
     background-size: cover;
     
 }
+.backImg{
+  background: url('../../public/images/Background_About11.jpg') no-repeat   ;
+}
 .bg-overlay {
     background:#0091ca91;
     

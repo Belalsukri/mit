@@ -24,6 +24,9 @@ export default function Nave() {
             <li className="nav-item linkHover ">
               <Link className="nav-link text-light font" to="/Erfolg">Erfolg</Link>
             </li>
+            <li className="nav-item linkHover ">
+              <Link className="nav-link text-light font" to="/Spende">Spende</Link>
+            </li>
 
             <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle text-light linkHover font" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,9 +35,6 @@ export default function Nave() {
               <ul className="dropdown-menu   linkopsty">
                 <li><Link className="dropdown-item text-light hov font" to="/About">About</Link></li>
                 <li><Link className="dropdown-item text-light hov font" to="/Contact">Contact</Link></li>
-
-                <li><hr className="dropdown-divider"/></li>
-                <li><Link className="dropdown-item text-light hov font" to="/Spende">Spende</Link></li>
               </ul>
             </li>
             <li className="nav-item">
