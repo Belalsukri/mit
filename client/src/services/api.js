@@ -6,7 +6,7 @@ export const addBlog = (title, dec,url,  productImg) => {
         fd.append('dec', dec)
        
             fd.append('productImg' , productImg[0])
-        fetch('/mit/addBlog', {
+        fetch('/addBlog', {
             method: 'POST',
             body: fd
         }).then(response => {
@@ -28,7 +28,7 @@ export const addBlog = (title, dec,url,  productImg) => {
 
 export const allBlogerPost=()=>{
     return new Promise((resolve, reject)=>{
-     fetch('/mit/getallbloger',{
+     fetch('/getallbloger',{
          method:'GET',
          headers:{
             'Content-Type':'application/json'
@@ -57,7 +57,7 @@ export const allBlogerPost=()=>{
             const sendData={
                 blogerId,
             }
-            fetch('/mit/deletebloger',{
+            fetch('/deletebloger',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
@@ -87,7 +87,7 @@ export const allBlogerPost=()=>{
             const data = {
                 id: blogerId
             }
-            fetch('/mit/getbloger', {
+            fetch('/getbloger', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -128,7 +128,7 @@ export const allBlogerPost=()=>{
             })
             fd.append('oldImgs',JSON.stringify(oldImgs))
             fd.append('blogId', blogId)
-            fetch('/mit/updateBlog', {
+            fetch('/updateBlog', {
                 method: 'POST',
                 body: fd
             }).then(response => {
@@ -160,7 +160,7 @@ export const allBlogerPost=()=>{
                 }
                 fd.append('blogid', blogid)
                 
-                fetch('/mit/editbloger', {
+                fetch('/editbloger', {
                     method: 'POST',
                     body: fd
                 }).then(response => {
@@ -186,7 +186,7 @@ export const allBlogerPost=()=>{
                 fd.append('dec', dec)
                
                     fd.append('productImg' , productImg[0])
-                fetch('/mit/AddErfolg', {
+                fetch('/AddErfolg', {
                     method: 'POST',
                     body: fd
                 }).then(response => {
@@ -208,7 +208,7 @@ export const allBlogerPost=()=>{
 
         export const allErfolgPost=()=>{
             return new Promise((resolve, reject)=>{
-             fetch('/mit/getallErfolg',{
+             fetch('/getallErfolg',{
                  method:'GET',
                  headers:{
                     'Content-Type':'application/json;charset=utf-8'
@@ -234,7 +234,7 @@ export const allBlogerPost=()=>{
             const data = {
                 id: blogerId
             }
-            fetch('/mit/getErfolg', {
+            fetch('/getErfolg', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -269,7 +269,7 @@ export const allBlogerPost=()=>{
                     }
                     fd.append('blogid', blogid)
                     
-                    fetch('/mit/editErfolg', {
+                    fetch('/editErfolg', {
                         method: 'POST',
                         body: fd
                     }).then(response => {
@@ -296,7 +296,7 @@ export const allBlogerPost=()=>{
             const sendData={
                 blogerId,
             }
-            fetch('/mit/deleteerfolg',{
+            fetch('/deleteerfolg',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
@@ -328,7 +328,7 @@ export const allBlogerPost=()=>{
             message
         }
         return new Promise((resolve, reject) => {
-            fetch('/mit/sendEmail',{
+            fetch('/sendEmail',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
@@ -357,7 +357,7 @@ export const allBlogerPost=()=>{
                 for (let i = 0; i < productImg.length; i++) {
                     fd.append('productImg' + i, productImg[i])
                 }
-            fetch('/mit/addimg', {
+            fetch('/addimg', {
                 method: 'POST',
                 body: fd
             }).then(response => {
@@ -380,7 +380,7 @@ export const allBlogerPost=()=>{
     ////////////////////////////////
     export const getAllImg=()=>{
         return new Promise((resolve, reject)=>{
-         fetch('/mit/getAllImg',{
+         fetch('/getAllImg',{
              method:'GET',
              headers:{
                 'Content-Type':'application/json'
@@ -410,7 +410,7 @@ export const allBlogerPost=()=>{
                 const sendData={
                     blogerId,
                 }
-                fetch('/mit/deleteimg',{
+                fetch('/deleteimg',{
                     method:'POST',
                     headers:{
                         'Content-Type':'application/json'

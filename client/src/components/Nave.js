@@ -8,7 +8,7 @@ export default function Nave() {
     <Zoom>
 <nav className="navbar navbar-expand-lg backgrundNav" >
       <div className="container text-center">
-        <a className="navbar-brand text-light" href="/"><img src='/images/papaLogo-2-rem.png' class="logo " alt="papa warum sind wir hier"/></a>
+        <a className="navbar-brand text-light" href="/"><img src='/images/Logo__2.png' class="logo " alt="papa warum sind wir hier"/></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -25,7 +25,7 @@ export default function Nave() {
               <Link className="nav-link text-light font" to="/Erfolg">Erfolg</Link>
             </li>
             <li className="nav-item linkHover ">
-              <Link className="nav-link text-light font" to="/Spende">Spende</Link>
+              <Link className="nav-link text-light font" to="/Spende">Spenden</Link>
             </li>
 
             <li className="nav-item dropdown">

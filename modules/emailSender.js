@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
   function getMessageContact(email,name, messageUsr,callback) {  
     const mailOption ={
         from: email,
-        to: 'robotcarnode@gmail.com',
+        to: 'papawswh@gmail.com',
         subject: name,
         text:   messageUsr
     }

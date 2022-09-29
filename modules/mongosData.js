@@ -304,7 +304,6 @@ function addErfolg(title, dec,imgs) {
                           // set the new image name
                           let newName = title.trim().replace(/ /g, '_') + '_' + idx + ext
                           img.mv('./client/build/uplodeFiles/' + newName)
-                          img.mv('./client/public/uplodeFiles/' + newName)
                           imgsArr.push('/uplodeFiles/' + newName)
                     });
                       const newProduct =new Erfolg({

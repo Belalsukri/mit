@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c6ab55d.css",
-    "main.js": "/static/js/main.845614b6.js",
+    "main.css": "/static/css/main.83dce9db.css",
+    "main.js": "/static/js/main.cf04452a.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/papa-warum.png": "/static/media/papa-warum.cb9936880f75e44088ce.png",
     "static/media/Background_About11.jpg": "/static/media/Background_About11.c1998343582ca3098d0f.jpg",
     "static/media/nave3-m.jpg": "/static/media/nave3-m.ca4bcd9f1a6530c8cc6b.jpg",
     "static/media/papa3-3-m.jpg": "/static/media/papa3-3-m.4a9a7bf3752b503027a3.jpg",
-    "static/media/papa1-1-m.jpg": "/static/media/papa1-1-m.261134d92535b4f23be9.jpg",
     "static/media/nave1-m.jpg": "/static/media/nave1-m.f1b6de33bef7efc62076.jpg",
     "static/media/nave2-m.jpg": "/static/media/nave2-m.05385465bdc2ede55c7a.jpg",
     "index.html": "/index.html",
-    "main.5c6ab55d.css.map": "/static/css/main.5c6ab55d.css.map",
-    "main.845614b6.js.map": "/static/js/main.845614b6.js.map",
+    "main.83dce9db.css.map": "/static/css/main.83dce9db.css.map",
+    "main.cf04452a.js.map": "/static/js/main.cf04452a.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c6ab55d.css",
-    "static/js/main.845614b6.js"
+    "static/css/main.83dce9db.css",
+    "static/js/main.cf04452a.js"
   ]
 }
